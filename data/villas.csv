@@ -1,0 +1,618 @@
+villa_id,name,lat,lon,coord_source,coord_precision_m,in_wikipedia,in_wikidata,in_osm,in_pleiades,n_sources,wikipedia_county,pastscape_or_coflein,wikidata,pleiades,osm,lad_cd,lad_nm,country
+V0001,Southwick,50.83705,-0.23377,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,West Sussex,PastScape 398675,Q16857788,https://pleiades.stoa.org/places/79690,,E07000223,Adur,England
+V0002,Angmering,50.8306,-0.50595,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,West Sussex,PastScape 392756,Q17675286,https://pleiades.stoa.org/places/79295,,E07000224,Arun,England
+V0003,Arundel,50.85294,-0.5588,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,West Sussex,PastScape 392697,Q59147583,,,E07000224,Arun,England
+V0004,Littlehampton,50.81421,-0.52564,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,West Sussex,PastScape 392824,,,,E07000224,Arun,England
+V0005,Walberton,50.84211,-0.61161,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,West Sussex,,,,,E07000224,Arun,England
+V0006,"Roman settlement in Long Melford, United Kingdom",52.0736,0.71459,Wikidata P625,,0,1,0,0,1,,,Q17646582,,,E07000200,Babergh,England
+V0007,Roman villa NE of Rodbridge House,52.0631,0.7189,Wikidata P625,,0,1,0,0,1,,,Q17641114,,,E07000200,Babergh,England
+V0008,Windmill Hill,52.00428,1.03359,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/491494714,,E07000200,Babergh,England
+V0009,Balchester,51.29968,-1.16939,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 236499,,,,E07000084,Basingstoke and Deane,England
+V0010,Burghclere,51.33844,-1.30823,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 233302,,,,E07000084,Basingstoke and Deane,England
+V0011,Hurstbourne Priors,51.24586,-1.36277,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 232098,,,,E07000084,Basingstoke and Deane,England
+V0012,Monk Sherborne,51.2897,-1.13143,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 240586,,,,E07000084,Basingstoke and Deane,England
+V0013,North Waltham,51.20583,-1.18554,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 236060,,,,E07000084,Basingstoke and Deane,England
+V0014,Stanchester,51.16607,-1.17122,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 236285,,,,E07000084,Basingstoke and Deane,England
+V0015,Oldcotes,53.39036,-1.11288,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Nottinghamshire,PastScape 318493,Q17642929,https://pleiades.stoa.org/places/79629,,E07000171,Bassetlaw,England
+V0016,Burnett,51.37896,-2.48265,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Somerset,PastScape 201090,,,,E06000022,Bath and North East Somerset,England
+V0017,Chew Magna,51.34703,-2.59223,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Somerset,PastScape 198033,,,,E06000022,Bath and North East Somerset,England
+V0018,Chew Park,51.33156,-2.62023,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Somerset,PastScape 197267,Q139831595,https://pleiades.stoa.org/places/79386,,E06000022,Bath and North East Somerset,England
+V0019,Combe,51.35832,-2.34398,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,Somerset,PastScape 204067,,https://pleiades.stoa.org/places/544572531,,E06000022,Bath and North East Somerset,England
+V0020,Keynsham Cemetery,51.42119,-2.51171,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Somerset,PastScape 201036,Q15126688,https://pleiades.stoa.org/places/847419768,,E06000022,Bath and North East Somerset,England
+V0021,Newton St Loe,51.38812,-2.4152,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Somerset,PastScape 203682,Q140277590,https://pleiades.stoa.org/places/79615,,E06000022,Bath and North East Somerset,England
+V0022,Paulton,51.30886,-2.47302,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Somerset,PastScape 200482,,,,E06000022,Bath and North East Somerset,England
+V0023,Roman Villa,51.39776,-2.30799,OpenStreetMap feature location,,0,0,1,0,1,,,,,node/2696864960,E06000022,Bath and North East Somerset,England
+V0024,Somerdale,51.41847,-2.49558,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Somerset,PastScape 200916,Q136736656,https://pleiades.stoa.org/places/79545,way/243594431,E06000022,Bath and North East Somerset,England
+V0025,Wellow,51.3204,-2.39163,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Somerset,PastScape 203043,Q17641975,https://pleiades.stoa.org/places/79748,,E06000022,Bath and North East Somerset,England
+V0026,Colworth,52.23279,-0.5789,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Bedfordshire,PastScape 346800,,,,E06000055,Bedford,England
+V0027,Sapcote,52.53373,-1.26911,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Leicestershire,PastScape 338045,Q140761851,https://pleiades.stoa.org/places/79671,,E07000129,Blaby,England
+V0028,Finchingfield,51.97717,0.42788,"Wikipedia OS grid reference, square centre",100.0,1,1,0,0,2,Essex,PastScape 376680,Q139858627,,,E07000067,Braintree,England
+V0029,Finchingfield,51.96586,0.45937,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,Essex,PastScape 376691,,https://pleiades.stoa.org/places/79465,,E07000067,Braintree,England
+V0030,Gestingthorpe,52.01618,0.66173,"Wikipedia OS grid reference, square centre",100.0,1,1,1,1,4,Essex,PastScape 381671,Q17674024,https://pleiades.stoa.org/places/79482,node/448024394,E07000067,Braintree,England
+V0031,Ridgewell,52.03371,0.52506,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Essex,PastScape 379420,Q140737732,https://pleiades.stoa.org/places/79655,,E07000067,Braintree,England
+V0032,Rivenhall,51.82925,0.65396,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Essex,PastScape 381076,Q140737777;Q17662118,https://pleiades.stoa.org/places/79657,,E07000067,Braintree,England
+V0033,Roman villa south of Alphamstone church,51.9852,0.73468,Wikidata P625,,0,1,0,0,1,,,Q17674036,,,E07000067,Braintree,England
+V0034,Ashill,52.60269,0.78121,Pleiades representative point,,0,1,0,1,2,,,Q139792319,https://pleiades.stoa.org/places/79303,,E07000143,Breckland,England
+V0035,Roman villa W of Woodrising Wood,52.5958,0.91359,Wikidata P625,,0,1,0,0,1,,,Q17648097,,,E07000143,Breckland,England
+V0036,Weeting,52.4596,0.61561,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Norfolk,PastScape 380213,,,,E07000143,Breckland,England
+V0037,Fryerning,51.69126,0.38072,"Wikipedia OS grid reference, square centre",100.0,1,1,0,0,2,Essex,PastScape 375861,Q17646386,,,E07000068,Brentwood,England
+V0038,Preston Park,50.83626,-0.1422,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,East Sussex,PastScape 401953,,,,E06000043,Brighton and Hove,England
+V0039,West Blatchington,50.84591,-0.18017,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79750,,E06000043,Brighton and Hove,England
+V0040,Brislington,51.43647,-2.55317,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Gloucestershire,PastScape 201401,Q15133915,https://pleiades.stoa.org/places/761753444,node/6898516045,E06000023,"Bristol, City of",England
+V0041,Kings Weston,51.49501,-2.67272,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Gloucestershire,PastScape 198239,Q6413039,https://pleiades.stoa.org/places/474421677,way/569144575,E06000023,"Bristol, City of",England
+V0042,Bolwick Hall,52.77347,1.26823,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Norfolk,PastScape 133102,,,,E07000144,Broadland,England
+V0043,Crofton,51.37296,0.08793,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Greater London,PastScape 407700,Q5187495,https://pleiades.stoa.org/places/646455441,way/250709622,E09000006,Bromley,England
+V0044,Keston,51.35099,0.0279,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Greater London,PastScape 407834,Q15133926,https://pleiades.stoa.org/places/594953359,,E09000006,Bromley,England
+V0045,Keston,51.35109,0.03006,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79544,,E09000006,Bromley,England
+V0046,Poverest Road,51.38833,0.10832,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Greater London,PastScape 407594,,,,E09000006,Bromley,England
+V0047,Foxcote,52.01148,-0.94895,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Buckinghamshire,PastScape 342930,,,,E06000060,Buckinghamshire,England
+V0048,Mursley,51.96572,-0.78947,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Buckinghamshire,PastScape 344806,,,,E06000060,Buckinghamshire,England
+V0049,Thornton,52.02379,-0.89881,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Buckinghamshire,PastScape 342881,,,,E06000060,Buckinghamshire,England
+V0050,Tingewick,51.99036,-1.04805,Pleiades representative point,,0,1,0,1,2,,,Q140984452,https://pleiades.stoa.org/places/79715,,E06000060,Buckinghamshire,England
+V0051,Arbury Road,52.22897,0.13313,Pleiades representative point,,0,1,0,1,2,,,Q139780823,https://pleiades.stoa.org/places/79300,,E07000008,Cambridge,England
+V0052,Blean,51.30492,1.05248,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Kent,PastScape 1249608,,,,E07000106,Canterbury,England
+V0053,Totternhoe,51.87705,-0.56421,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Bedfordshire,PastScape 346563,Q20979113,https://pleiades.stoa.org/places/79720,node/7354957980,E06000056,Central Bedfordshire,England
+V0054,Hamilton Grounds,52.66271,-1.04407,"Wikipedia OS grid reference, square centre",100.0,1,1,0,0,2,Leicestershire,PastScape 319193,Q17640716,,,E07000130,Charnwood,England
+V0055,Ridgeway,52.70534,-1.15925,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Leicestershire,PastScape 317190,Q17640656,https://pleiades.stoa.org/places/79660,,E07000130,Charnwood,England
+V0056,Chignall,51.77177,0.40822,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Essex,PastScape 376080,Q17674063,https://pleiades.stoa.org/places/79387,,E07000070,Chelmsford,England
+V0057,Pleshey,51.80346,0.39322,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Essex,PastScape 376028,Q17674049,https://pleiades.stoa.org/places/613664405,,E07000070,Chelmsford,England
+V0058,Blenheim Roman villa,51.842,-1.33892,Pleiades representative point,,0,1,0,1,2,,,Q17663599,https://pleiades.stoa.org/places/584074927,,E07000177,Cherwell,England
+V0059,Hanwell,52.09031,-1.37578,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Oxfordshire,PastScape 337244,,,,E07000177,Cherwell,England
+V0060,Islip,51.81692,-1.22883,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Oxfordshire,PastScape 338766,Q17676869,https://pleiades.stoa.org/places/79536,node/1710036511,E07000177,Cherwell,England
+V0061,The Castle,51.87837,-1.17408,Wikidata P625,,0,1,0,0,1,,,Q24661485,,,E07000177,Cherwell,England
+V0062,Wigginton,51.99914,-1.42802,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Oxfordshire,PastScape 335107,Q15133934,,,E07000177,Cherwell,England
+V0063,Roman Villa,53.16574,-2.86031,OpenStreetMap feature location,,0,0,1,0,1,,,,,way/962929398,E06000050,Cheshire West and Chester,England
+V0064,Vale Royal,53.16643,-2.64241,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,Cheshire,PastScape 71430,Q112762026,https://pleiades.stoa.org/places/79445,,E06000050,Cheshire West and Chester,England
+V0065,Batten Hanger,50.93167,-0.83728,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,West Sussex,PastScape 246266,Q17664242,https://pleiades.stoa.org/places/79321,,E07000225,Chichester,England
+V0066,Bignor,50.92326,-0.59504,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,West Sussex,PastScape 249475,Q1339031,https://pleiades.stoa.org/places/79328,way/234465727,E07000225,Chichester,England
+V0067,Chilgrove,50.90546,-0.81461,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,West Sussex,PastScape 246688,Q1649284,,,E07000225,Chichester,England
+V0068,Chilgrove,50.91597,-0.80467,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,West Sussex,PastScape 246691,Q17644006;Q1669974,https://pleiades.stoa.org/places/79388,,E07000225,Chichester,England
+V0069,Fishbourne,50.83661,-0.80925,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,West Sussex,PastScape 245943,Q1247128,https://pleiades.stoa.org/places/79466,,E07000225,Chichester,England
+V0070,Pitlands Farm,50.90602,-0.86715,"Wikipedia OS grid reference, square centre",100.0,1,1,0,0,2,West Sussex,PastScape 242752,Q141593969,,,E07000225,Chichester,England
+V0071,Rowlands Castle,50.89783,-0.95267,"Wikipedia OS grid reference, square centre",100.0,1,0,1,0,2,Hampshire,PastScape 242833,,,node/7392073857,E07000225,Chichester,England
+V0072,Sidlesham,50.76653,-0.78934,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,West Sussex,PastScape 462211,,,,E07000225,Chichester,England
+V0073,West Marden,50.9081,-0.9013,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,West Sussex,PastScape 242738,,https://pleiades.stoa.org/places/79753,,E07000225,Chichester,England
+V0074,Latimer,51.67664,-0.5584,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Buckinghamshire,PastScape 251990,Q139882660,https://pleiades.stoa.org/places/79555,,E07000005,Chiltern,England
+V0075,Fingrinhoe Roman Site,51.83621,0.96937,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/3026205,,E07000071,Colchester,England
+V0076,Great Tey,51.8957,0.74437,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Essex,PastScape 381346,Q17677161,https://pleiades.stoa.org/places/778859459,,E07000071,Colchester,England
+V0077,Park Farm,51.84611,0.89418,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Essex,PastScape 384123,,,,E07000071,Colchester,England
+V0078,West Mersea,51.77521,0.9116,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,Essex,PastScape 386129,,https://pleiades.stoa.org/places/155499663,,E07000071,Colchester,England
+V0079,Magor,50.23385,-5.31523,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Cornwall,PastScape 426186,Q17647592,https://pleiades.stoa.org/places/79588,,E06000052,Cornwall,England
+V0080,Abbotswood,51.93441,-1.73167,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Gloucestershire,PastScape 330160,Q17648310,,,E07000079,Cotswold,England
+V0081,Ampney St Peter,51.70341,-1.88484,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Gloucestershire,PastScape 327315,,,,E07000079,Cotswold,England
+V0082,Barnsley Park,51.75421,-1.8837,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Gloucestershire,PastScape 327163,Q17678122,https://pleiades.stoa.org/places/79315,,E07000079,Cotswold,England
+V0083,Barrington Park,51.82259,-1.70521,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Gloucestershire,PastScape 332433,,,,E07000079,Cotswold,England
+V0084,Barton Farm,51.72332,-2.02882,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79319,,E07000079,Cotswold,England
+V0085,Bibury,51.75728,-1.82429,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Gloucestershire,PastScape 329710,Q17649421,,,E07000079,Cotswold,England
+V0086,Broadwell,51.95036,-1.7115,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Gloucestershire,PastScape 330131,Q17649232,,,E07000079,Cotswold,England
+V0087,Chedworth,51.81988,-1.92487,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Gloucestershire,PastScape 327592,Q5089233,https://pleiades.stoa.org/places/79383,way/111512316,E07000079,Cotswold,England
+V0088,Cirencester,51.71965,-1.97773,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Gloucestershire,PastScape 327354,Q139801630,,,E07000079,Cotswold,England
+V0089,Clear Cupboard,51.84087,-1.8093,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Gloucestershire,PastScape 329941,,,,E07000079,Cotswold,England
+V0090,Coberley Roman Villa,51.8353,-2.04846,Wikidata P625,,0,1,0,0,1,,,Q17664404,,,E07000079,Cotswold,England
+V0091,Combend,51.79832,-2.02439,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Gloucestershire,PastScape 117505,,,,E07000079,Cotswold,England
+V0092,Compton Grove,51.84479,-1.93137,"Wikipedia OS grid reference, square centre",10.0,1,1,1,0,3,Gloucestershire,PastScape 327505,Q17649308,,way/904576750,E07000079,Cotswold,England
+V0093,Ditches,51.78367,-2.00727,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Gloucestershire,PastScape 117102,Q141560865,https://pleiades.stoa.org/places/444467901,,E07000079,Cotswold,England
+V0094,Eastleach,51.75548,-1.72752,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Gloucestershire,PastScape 918537,,,,E07000079,Cotswold,England
+V0095,Ebrington,52.05802,-1.72539,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Gloucestershire,PastScape 330563,Q17640914,,,E07000079,Cotswold,England
+V0096,Great Barrington,51.81742,-1.68638,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Gloucestershire,PastScape 332436,Q17649169,,,E07000079,Cotswold,England
+V0097,Great Lemhill,51.72078,-1.69443,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Gloucestershire,PastScape 332221,Q17640837,https://pleiades.stoa.org/places/62842860,,E07000079,Cotswold,England
+V0098,Great Rissington,51.84539,-1.7264,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Gloucestershire,PastScape 329866,,,,E07000079,Cotswold,England
+V0099,Hocberry,51.68465,-2.08189,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Gloucestershire,PastScape 212790,,,,E07000079,Cotswold,England
+V0100,Kempsford,51.67256,-1.75838,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Gloucestershire,PastScape 1010687,,,,E07000079,Cotswold,England
+V0101,Lechlade,51.7062,-1.68874,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Gloucestershire,PastScape 332224,Q136841694,https://pleiades.stoa.org/places/957554023,,E07000079,Cotswold,England
+V0102,Listercombe Bottom,51.8043,-1.89966,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Gloucestershire,PastScape 327610,Q17905082,https://pleiades.stoa.org/places/897733154,node/6898422113,E07000079,Cotswold,England
+V0103,Naunton,51.90943,-1.81025,"Wikipedia OS grid reference, square centre",100.0,1,1,0,0,2,Gloucestershire,PastScape 330507,Q17649276,,,E07000079,Cotswold,England
+V0104,Shipton,51.86285,-1.9219,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Gloucestershire,PastScape 1509781,,,,E07000079,Cotswold,England
+V0105,Turkdean,51.86994,-1.85689,"Wikipedia OS grid reference, square centre",100.0,1,1,1,1,4,Gloucestershire,PastScape 1185169,Q17664508,https://pleiades.stoa.org/places/620543181,way/904576754,E07000079,Cotswold,England
+V0106,Waltham Field,51.88697,-1.98971,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Gloucestershire,PastScape 328021,,,,E07000079,Cotswold,England
+V0107,West Chestle,51.78982,-1.79335,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Gloucestershire,PastScape 763697,,,,E07000079,Cotswold,England
+V0108,Whittington,51.88319,-1.97867,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Gloucestershire,PastScape 327977,Q17640898,https://pleiades.stoa.org/places/79758,way/891527533,E07000079,Cotswold,England
+V0109,Withington,51.83239,-1.9562,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Gloucestershire,PastScape 327648,Q141592965;Q17649316,https://pleiades.stoa.org/places/79767,way/905954803,E07000079,Cotswold,England
+V0110,Old Durham,54.77868,-1.55967,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/89258,,E06000047,County Durham,England
+V0111,Boxmoor,51.74026,-0.49787,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Hertfordshire,PastScape 359304,Q17662025;Q60718550,https://pleiades.stoa.org/places/79342,node/6025306233,E07000096,Dacorum,England
+V0112,Gadebridge Park,51.76691,-0.4793,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Hertfordshire,PastScape 359278,Q5516331,https://pleiades.stoa.org/places/79473,node/1685739051,E07000096,Dacorum,England
+V0113,Northchurch,51.77334,-0.59113,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Hertfordshire,PastScape 346269,Q60847951,https://pleiades.stoa.org/places/79620,,E07000096,Dacorum,England
+V0114,Darenth Court,51.41328,0.24666,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Kent,PastScape 410759,Q119781925;Q17661980,https://pleiades.stoa.org/places/79413,,E07000107,Dartford,England
+V0115,Dartford,51.43899,0.2236,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Kent,PastScape 411352,,,,E07000107,Dartford,England
+V0116,Northfleet Villa,51.44284,0.32388,Pleiades representative point,,0,1,0,1,2,,,Q138708581,https://pleiades.stoa.org/places/441917860,,E07000107,Dartford,England
+V0117,Wilmington,51.43498,0.21665,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Kent,PastScape 410980,,,,E07000107,Dartford,England
+V0118,Carsington by Wirksworth,53.06166,-1.62953,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Derbyshire,PastScape 607068,Q86752251,https://pleiades.stoa.org/places/79377,,E07000035,Derbyshire Dales,England
+V0119,Conisbrough Parks Romano-British Villa,53.46337,-1.22742,Wikidata P625,,0,1,0,0,1,,,Q136387547,,,E08000017,Doncaster,England
+V0120,Stancil,53.45764,-1.08317,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,South Yorkshire,PastScape 320822,Q17643273,,,E08000017,Doncaster,England
+V0121,Farnham,50.93893,-2.05118,"Wikipedia OS grid reference, square centre",1000.0,1,0,0,0,1,Dorset,PastScape 209791,,,,E06000059,Dorset,England
+V0122,Fifehead Neville,50.89996,-2.32438,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Dorset,PastScape 202262,Q17647797,https://pleiades.stoa.org/places/79464,,E06000059,Dorset,England
+V0123,Hemsworth,50.85238,-2.05358,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Dorset,PastScape 209284,Q15133922,,,E06000059,Dorset,England
+V0124,Hemsworth,50.88154,-2.06496,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79506,,E06000059,Dorset,England
+V0125,Hinton St Mary,50.94326,-2.30803,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Dorset,PastScape 202177,Q2202544,https://pleiades.stoa.org/places/79515,,E06000059,Dorset,England
+V0126,Iwerne,50.92307,-2.20489,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Dorset,PastScape 206061,Q17645885,,,E06000059,Dorset,England
+V0127,Myncen Farm,50.9286,-2.03908,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Dorset,PastScape 912528,,,,E06000059,Dorset,England
+V0128,Tarrant Hinton,50.90693,-2.10669,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Dorset,PastScape 210228,Q17648051,https://pleiades.stoa.org/places/79709,,E06000059,Dorset,England
+V0129,Sandwich,51.26769,1.32301,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Kent,PastScape 468326,,,,E07000108,Dover,England
+V0130,Wingham,51.27029,1.21063,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,Kent,PastScape 466356,,https://pleiades.stoa.org/places/79765,,E07000108,Dover,England
+V0131,Fordham,52.28984,0.39656,"Wikipedia OS grid reference, square centre",100.0,1,1,0,0,2,Cambridgeshire,PastScape 377396,Q17641429,,,E07000009,East Cambridgeshire,England
+V0132,Reach,52.26235,0.30297,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Cambridgeshire,PastScape 374665,Q17641457,,,E07000009,East Cambridgeshire,England
+V0133,Holcombe,50.7309,-2.97202,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Devon,PastScape 449785,Q17640652,https://pleiades.stoa.org/places/79517,,E07000040,East Devon,England
+V0134,Honeyditchesgh,50.71317,-3.07994,"Wikipedia OS grid reference, square centre",100.0,1,0,0,1,2,Devon,PastScape 449679,,https://pleiades.stoa.org/places/79676,,E07000040,East Devon,England
+V0135,Roman Villa,50.83154,-3.04614,OpenStreetMap feature location,,0,0,1,0,1,,,,,node/5501979946,E07000040,East Devon,England
+V0136,Roman Villa,50.63055,-3.30481,OpenStreetMap feature location,,0,0,1,0,1,,,,,node/5494118807,E07000040,East Devon,England
+V0137,Roman Villa,50.74083,-3.43284,OpenStreetMap feature location,,0,0,1,0,1,,,,,node/2934586954,E07000040,East Devon,England
+V0138,Binsted,51.166,-0.87652,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Hampshire,PastScape 243998,,,,E07000085,East Hampshire,England
+V0139,Glade Farm,51.20633,-0.88606,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 243745,,,,E07000085,East Hampshire,England
+V0140,Liss,51.05076,-0.90999,"Wikipedia OS grid reference, square centre",1000.0,1,0,0,0,1,Hampshire,,,,,E07000085,East Hampshire,England
+V0141,Rowlands Castle,50.8838,-0.9576,"Wikipedia OS grid reference, square centre",10.0,1,0,1,0,2,Hampshire,PastScape 242847,,,node/7392073856,E07000085,East Hampshire,England
+V0142,Stroud,51.00727,-0.96781,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Hampshire,PastScape 243069,Q17650354,https://pleiades.stoa.org/places/79700,,E07000085,East Hampshire,England
+V0143,Wyck,51.14871,-0.91662,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Hampshire,PastScape 243199,Q17649772,,,E07000085,East Hampshire,England
+V0144,Barrs Farm,53.24235,-0.14097,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Lincolnshire,PastScape 352988,,,,E07000137,East Lindsey,England
+V0145,Brantingham,53.7473,-0.58888,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,East Riding of Yorkshire,PastScape 63917,Q17662560,https://pleiades.stoa.org/places/79348,,E06000011,East Riding of Yorkshire,England
+V0146,Grindale,54.12437,-0.26546,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,East Riding of Yorkshire,PastScape 81350,,,,E06000011,East Riding of Yorkshire,England
+V0147,Harpham,54.05688,-0.33641,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,East Riding of Yorkshire,PastScape 79578,Q17678165,https://pleiades.stoa.org/places/89197,,E06000011,East Riding of Yorkshire,England
+V0148,Rudston,54.08483,-0.33606,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,East Riding of Yorkshire,PastScape 79473,Q15133974,https://pleiades.stoa.org/places/920394485734333,,E06000011,East Riding of Yorkshire,England
+V0149,Rudston,54.09498,-0.32605,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/89283,,E06000011,East Riding of Yorkshire,England
+V0150,South Newbald,53.81337,-0.62767,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,East Riding of Yorkshire,PastScape 64117,Q140277448,https://pleiades.stoa.org/places/79611,,E06000011,East Riding of Yorkshire,England
+V0151,Welton villa,53.7384,-0.52482,Wikidata P625,,0,1,0,0,1,,,Q140175725,,,E06000011,East Riding of Yorkshire,England
+V0152,Eastbourne,50.76846,0.29384,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,East Sussex,PastScape 470246,Q139858192,https://pleiades.stoa.org/places/79444,,E07000061,Eastbourne,England
+V0153,Eastleigh,50.94424,-1.35751,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 230032,,,,E07000086,Eastleigh,England
+V0154,Roman villa 300m south of Long Shaw,51.656,0.09404,Wikidata P625,,0,1,0,0,1,,,Q17646393,,,E07000072,Epping Forest,England
+V0155,Roman villa south of Hill Farm,51.6588,0.12754,Wikidata P625,,0,1,0,0,1,,,Q17646372,,,E07000072,Epping Forest,England
+V0156,Folkestone,51.08847,1.19844,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Kent,PastScape 465716,Q1347915,https://pleiades.stoa.org/places/79467,way/485213895,E07000112,Folkestone and Hythe,England
+V0157,Boughspring,51.6735,-2.6382,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Gloucestershire,PastScape 198716,,,,E07000080,Forest of Dean,England
+V0158,Park Farm,51.71434,-2.54411,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Gloucestershire,PastScape 111684,,,,E07000080,Forest of Dean,England
+V0159,Roman Villa at Clearwell Farm,51.7743,-2.62006,Wikidata P625,,0,1,0,0,1,,,Q17664452,,,E07000080,Forest of Dean,England
+V0160,The Chesters,51.68606,-2.58362,"Wikipedia OS grid reference, square centre",100.0,1,1,0,0,2,Gloucestershire,PastScape 198703,Q17643572,,,E07000080,Forest of Dean,England
+V0161,Hucclecote,51.85645,-2.18007,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Gloucestershire,PastScape 115209,Q15133923,https://pleiades.stoa.org/places/79520,node/6896835062,E07000081,Gloucester,England
+V0162,Cobham Park,51.39799,0.41829,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Kent,PastScape 413160,Q141593075,,,E07000109,Gravesham,England
+V0163,Compton,51.22304,-0.63047,"Wikipedia OS grid reference, square centre",10.0,1,1,1,0,3,Surrey,PastScape 250238,Q17646652,,node/301601097,E07000209,Guildford,England
+V0164,Worplesdon,51.25062,-0.61303,"Wikipedia OS grid reference, square centre",10.0,1,0,1,0,2,Surrey,PastScape 250813,,,node/602989361,E07000209,Guildford,England
+V0165,Worplesdon,51.27568,-0.60843,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79771,,E07000209,Guildford,England
+V0166,Bringhurst,52.5207,-0.75681,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Leicestershire,PastScape 964600,,,,E07000131,Harborough,England
+V0167,Claybrooke Magna,52.49274,-1.29225,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Leicestershire,PastScape 964656,,,,E07000131,Harborough,England
+V0168,Drayton,52.51841,-0.79666,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,Leicestershire,PastScape 964689,Q139858120,https://pleiades.stoa.org/places/79428,,E07000131,Harborough,England
+V0169,Glooston,52.55696,-0.89112,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Leicestershire,PastScape 344021,,,,E07000131,Harborough,England
+V0170,Lowesby,52.65439,-0.91268,"Wikipedia OS grid reference, square centre",100.0,1,1,0,0,2,Leicestershire,PastScape 964659,Q17674358,,,E07000131,Harborough,England
+V0171,Medbourne,52.52899,-0.82475,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Leicestershire,PastScape 344073,Q139765116,,,E07000131,Harborough,England
+V0172,Stocking Field,52.52949,-0.77712,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Leicestershire,PastScape 346249,,,,E07000131,Harborough,England
+V0173,West Langton,52.52187,-0.94786,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,Leicestershire,PastScape 344132,,https://pleiades.stoa.org/places/79752,,E07000131,Harborough,England
+V0174,Harlow,51.79205,0.14595,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Essex,PastScape 1084331,Q17662571,,,E07000073,Harlow,England
+V0175,Crondall,51.2178,-0.86302,"Wikipedia OS grid reference, square centre",10.0,1,0,1,0,2,Hampshire,PastScape 243750,,,node/301595999,E07000089,Hart,England
+V0176,Odiham,51.26812,-0.94621,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Hampshire,PastScape 244258,Q17650176,https://pleiades.stoa.org/places/978717380,node/6904101589,E07000089,Hart,England
+V0177,Havant,50.86077,-1.01879,"Wikipedia OS grid reference, square centre",10.0,1,0,1,0,2,Hampshire,PastScape 238381,,,node/1376737701,E07000090,Havant,England
+V0178,Langstone,50.84301,-0.98251,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 242160,,,,E07000090,Havant,England
+V0179,Wakefords Copse Roman Villa (site of),50.87709,-0.96823,OpenStreetMap feature location,,0,0,1,0,1,,,,,node/7392073858,E07000090,Havant,England
+V0180,Warblington Roman Villa,50.84819,-0.95959,Wikidata P625,,0,1,1,0,2,,,Q122917305,,node/3486836424,E07000090,Havant,England
+V0181,Bishopstone,52.08565,-2.85145,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,Herefordshire,PastScape 108082,,https://pleiades.stoa.org/places/79330,,E06000019,"Herefordshire, County of",England
+V0182,Credenhill,52.07929,-2.80901,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Herefordshire,PastScape 108096,,,,E06000019,"Herefordshire, County of",England
+V0183,Huntsham,51.85604,-2.63395,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Herefordshire,PastScape 109575,Q139882099,,,E06000019,"Herefordshire, County of",England
+V0184,Huntsham,51.87635,-2.61398,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79521,,E06000019,"Herefordshire, County of",England
+V0185,New Weir,52.07182,-2.82317,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Herefordshire,PastScape 108100,Q17641797,https://pleiades.stoa.org/places/79610,,E06000019,"Herefordshire, County of",England
+V0186,Roman villa E of the Rectory,52.0309,-2.52234,Wikidata P625,,0,1,0,0,1,,,Q17642212,,,E06000019,"Herefordshire, County of",England
+V0187,Radlett,51.69746,-0.34684,"Wikipedia OS grid reference, square centre",100.0,1,1,1,1,4,Herefordshire,PastScape 362062,Q17641709,https://pleiades.stoa.org/places/841173179,node/2752467770,E07000098,Hertsmere,England
+V0188,Osbaston,52.63074,-1.37277,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Leicestershire,PastScape 964895,,,,E07000132,Hinckley and Bosworth,England
+V0189,Borough Farm,50.97036,-0.47911,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,West Sussex,PastScape 393391,,,,E07000227,Horsham,England
+V0190,Pulborough,50.95709,-0.49771,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79648,,E07000227,Horsham,England
+V0191,Wiggonholt,50.9477,-0.48569,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,West Sussex,PastScape 392908,,https://pleiades.stoa.org/places/33764426,,E07000227,Horsham,England
+V0192,Godmanchester,52.32585,-0.15623,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Cambridgeshire,PastScape 366565,,,,E07000011,Huntingdonshire,England
+V0193,Huntingdon,52.32663,-0.18679,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Cambridgeshire,PastScape 366748,,,,E07000011,Huntingdonshire,England
+V0194,Rushey Farm,52.25389,-0.3392,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Cambridgeshire,PastScape 363484,,,,E07000011,Huntingdonshire,England
+V0195,Water Newton,52.56264,-0.36172,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Cambridgeshire,PastScape 364448,,,,E07000011,Huntingdonshire,England
+V0196,Castle Hill,52.07614,1.13228,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Suffolk,PastScape 388170,Q124685643,https://pleiades.stoa.org/places/79761,,E07000202,Ipswich,England
+V0197,Brading,50.67288,-1.1522,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Isle of Wight,PastScape 461161,Q1411412,https://pleiades.stoa.org/places/79343,relation/5845224,E06000046,Isle of Wight,England
+V0198,Carisbrooke,50.69049,-1.31468,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Isle of Wight,PastScape 460043,Q15133916,,,E06000046,Isle of Wight,England
+V0199,Clatterford,50.68496,-1.32241,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Isle of Wight,PastScape 460017,Q17649990,,,E06000046,Isle of Wight,England
+V0200,Combley,50.68805,-1.23969,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Isle of Wight,PastScape 461298,Q17648328,https://pleiades.stoa.org/places/919152219,node/6900425454,E06000046,Isle of Wight,England
+V0201,Gurnard,50.75633,-1.333,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Isle of Wight,PastScape 460615,,,,E06000046,Isle of Wight,England
+V0202,Newport,50.69449,-1.29183,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Isle of Wight,PastScape 461238,Q12064005,https://pleiades.stoa.org/places/79613,node/4775145110,E06000046,Isle of Wight,England
+V0203,Rock,50.65554,-1.40205,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Isle of Wight,PastScape 460425,Q17648120,,,E06000046,Isle of Wight,England
+V0204,Feltwell,52.50074,0.50379,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Norfolk,PastScape 380605,,,,E07000146,King's Lynn and West Norfolk,England
+V0205,Feltwell,52.48949,0.52524,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,Norfolk,PastScape 380586,Q139858563,https://pleiades.stoa.org/places/79462,,E07000146,King's Lynn and West Norfolk,England
+V0206,Gayton Thorpe,52.73237,0.56881,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Norfolk,PastScape 357080,Q17648447,https://pleiades.stoa.org/places/79478,,E07000146,King's Lynn and West Norfolk,England
+V0207,Grimston,52.76517,0.54265,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,Norfolk,PastScape 357416,Q17648401,https://pleiades.stoa.org/places/79494,,E07000146,King's Lynn and West Norfolk,England
+V0208,Roman villa NE of Eaton,52.8982,0.52614,Wikidata P625,,0,1,0,0,1,,,Q17647994,,,E07000146,King's Lynn and West Norfolk,England
+V0209,Roman villa in and adjacent to Denbeck Wood,52.819,0.54196,Wikidata P625,,0,1,0,0,1,,,Q17671787,,,E07000146,King's Lynn and West Norfolk,England
+V0210,Roman villa one mile (1600m) E of village,52.774,0.69656,Wikidata P625,,0,1,0,0,1,,,Q17648125,,,E07000146,King's Lynn and West Norfolk,England
+V0211,Romano-British villa 400m west of White House,52.8776,0.57787,Wikidata P625,,0,1,0,0,1,,,Q17674086,,,E07000146,King's Lynn and West Norfolk,England
+V0212,Snettisham,52.87428,0.50898,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Norfolk,PastScape 356701,Q17674077,https://pleiades.stoa.org/places/628686199,node/4795851839,E07000146,King's Lynn and West Norfolk,England
+V0213,Dalton Parlours,53.89543,-1.38861,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,West Yorkshire,PastScape 54988,,https://pleiades.stoa.org/places/89158,,E08000035,Leeds,England
+V0214,Norfolk Street,52.63408,-1.1513,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Leicestershire,PastScape 316867,Q140277629,https://pleiades.stoa.org/places/79617,,E06000016,Leicester,England
+V0215,Barcombe,50.91032,0.01488,"Wikipedia OS grid reference, square centre",100.0,1,1,0,0,2,East Sussex,PastScape 618719,Q1668852,,,E07000063,Lewes,England
+V0216,Plumpton,50.91618,-0.06596,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,East Sussex,PastScape 974745,,,,E07000063,Lewes,England
+V0217,Preston Court,50.84724,0.07076,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,East Sussex,PastScape 973183,Q138102962,https://pleiades.stoa.org/places/79322,,E07000063,Lewes,England
+V0218,Shenstone,52.64663,-1.83834,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Staffordshire,PastScape 306513,,,,E07000194,Lichfield,England
+V0219,Greetwell Villa,53.23558,-0.51172,Wikidata P625,,0,1,0,0,1,,,Q15133972,,,E07000138,Lincoln,England
+V0220,Maidstone,51.27798,0.51809,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Kent,PastScape 415105,Q140277037,,,E07000110,Maidstone,England
+V0221,Maidstone,51.2655,0.52959,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,Kent,PastScape 415680,,https://pleiades.stoa.org/places/79589,,E07000110,Maidstone,England
+V0222,Teston,51.25235,0.43299,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Kent,PastScape 412907,,,,E07000110,Maidstone,England
+V0223,Thurnham,51.28516,0.57671,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Kent,PastScape 415057,Q137841956,https://pleiades.stoa.org/places/779867419,,E07000110,Maidstone,England
+V0224,Mansfield Woodhouse,53.16904,-1.18143,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79593,,E07000174,Mansfield,England
+V0225,Northfield,53.17552,-1.21577,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Nottinghamshire,PastScape 318221,Q17642938,,,E07000174,Mansfield,England
+V0226,Wycomb,52.82181,-0.84024,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Leicestershire,PastScape 964934,,,,E07000133,Melton,England
+V0227,Blacklands,51.286,-2.33764,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Somerset,PastScape 203138,,,,E07000187,Mendip,England
+V0228,Iford,51.32348,-2.2922,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Somerset,PastScape 202980,,,,E07000187,Mendip,England
+V0229,Mells Park,51.22636,-2.42599,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Somerset,PastScape 202840,,,,E07000187,Mendip,England
+V0230,Priddy,51.2604,-2.67359,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,Somerset,PastScape 197734,,https://pleiades.stoa.org/places/55227237,,E07000187,Mendip,England
+V0231,Roman villa NW of Port Way,51.2768,-2.34169,Wikidata P625,,0,1,0,0,1,,,Q17641913,,,E07000187,Mendip,England
+V0232,Roman villa NW of Two Acre Plantation,51.1086,-2.73157,Wikidata P625,,0,1,0,0,1,,,Q17642083,,,E07000187,Mendip,England
+V0233,"Roman villa complex, 330m south-west of St Algar's Farm",51.1754,-2.31142,Wikidata P625,,0,1,0,0,1,,,Q17641973,,,E07000187,Mendip,England
+V0234,Whatley,51.22157,-2.36759,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Somerset,PastScape 202781,Q17642108,https://pleiades.stoa.org/places/805330167,,E07000187,Mendip,England
+V0235,Downes,50.78099,-3.63194,"Wikipedia OS grid reference, square centre",10.0,1,1,1,0,3,Devon,PastScape 918313,Q17650543,,node/2902668946,E07000042,Mid Devon,England
+V0236,Roman Villa,50.81349,-3.5135,OpenStreetMap feature location,,0,0,1,0,1,,,,,node/4947268423,E07000042,Mid Devon,England
+V0237,Stonham Aspal,52.19205,1.11628,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Suffolk,PastScape 388631,Q140762976,https://pleiades.stoa.org/places/79698,,E07000203,Mid Suffolk,England
+V0238,Hurstpierpoint,50.92074,-0.17896,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,West Sussex,PastScape 398970,Q17674090,,,E07000228,Mid Sussex,England
+V0239,Bancroft,52.05551,-0.79506,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Buckinghamshire,PastScape 345174,Q4854164,https://pleiades.stoa.org/places/79312,node/652692046,E06000042,Milton Keynes,England
+V0240,Lavendon,52.17763,-0.67213,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Buckinghamshire,PastScape 346970,,,,E06000042,Milton Keynes,England
+V0241,Roman villa 300m south east of Newton Lodge Farm,52.1539,-0.66808,Wikidata P625,,0,1,0,0,1,,,Q17662906,,,E06000042,Milton Keynes,England
+V0242,Stanton Low,52.07942,-0.77348,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,Buckinghamshire,PastScape 345100,Q140762653,https://pleiades.stoa.org/places/79694,,E06000042,Milton Keynes,England
+V0243,Abinger,51.21568,-0.41721,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Surrey,PastScape 396943,Q17663237,,,E07000210,Mole Valley,England
+V0244,Ashtead,51.32849,-0.31127,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Surrey,PastScape 397707,Q17646842;Q71776607,https://pleiades.stoa.org/places/854370382,node/6901125113,E07000210,Mole Valley,England
+V0245,Rockbourne,50.95253,-1.83032,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Hampshire,PastScape 217299,Q7354971,https://pleiades.stoa.org/places/79659,way/250790074,E07000091,New Forest,England
+V0246,Cromwell,53.15405,-0.8014,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,Nottinghamshire,PastScape 324520,Q139857920,https://pleiades.stoa.org/places/79408,,E07000175,Newark and Sherwood,England
+V0247,Southwell,53.07668,-0.9523,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Nottinghamshire,PastScape 322403,Q140762521,https://pleiades.stoa.org/places/79689,,E07000175,Newark and Sherwood,England
+V0248,Wood Meadow,53.03814,-0.99708,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Nottinghamshire,PastScape 319888,Q140984427,https://pleiades.stoa.org/places/79714,,E07000175,Newark and Sherwood,England
+V0249,Hales,52.90015,-2.41435,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Staffordshire,PastScape 74380,Q17646135,https://pleiades.stoa.org/places/79498,,E07000195,Newcastle-under-Lyme,England
+V0250,Radwell,52.00292,-0.20311,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Herefordshire,PastScape 365614,Q17663393,https://pleiades.stoa.org/places/503058495,way/1305975269,E07000099,North Hertfordshire,England
+V0251,Weston,51.96108,-0.14904,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Herefordshire,PastScape 365679,Q17662031,,,E07000099,North Hertfordshire,England
+V0252,"Wymondley, also known as Ninesprings,",51.94861,-0.24486,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Hertfordshire,PastScape 365078,Q17645501;Q108597487,https://pleiades.stoa.org/places/432329375,,E07000099,North Hertfordshire,England
+V0253,Branston Roman villa,53.18967,-0.49768,Pleiades representative point,,0,0,1,1,2,,,,https://pleiades.stoa.org/places/651422974,node/6708314241,E07000139,North Kesteven,England
+V0254,Canwick,53.21381,-0.52196,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79375,,E07000139,North Kesteven,England
+V0255,Haceby,52.92008,-0.48503,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Lincolnshire,PastScape 348661,Q17644290,https://pleiades.stoa.org/places/79497,,E07000139,North Kesteven,England
+V0256,Norton Disney,53.13281,-0.71761,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Lincolnshire,PastScape 324486,Q17644210,https://pleiades.stoa.org/places/79621,way/550950616,E07000139,North Kesteven,England
+V0257,Gravel Pit Farm,53.45823,-0.58651,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Lincolnshire,PastScape 1063122,,,,E06000013,North Lincolnshire,England
+V0258,Horkstow,53.65953,-0.511,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Lincolnshire,PastScape 63618,Q17671495,https://pleiades.stoa.org/places/79519,,E06000013,North Lincolnshire,England
+V0259,Mount Pleasant Farm,53.4918,-0.58547,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Lincolnshire,PastScape 63566,,,,E06000013,North Lincolnshire,England
+V0260,Roxby,53.6412,-0.60937,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Lincolnshire,PastScape 63684,Q140761186,https://pleiades.stoa.org/places/79662,,E06000013,North Lincolnshire,England
+V0261,Winterton,53.65056,-0.62525,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Lincolnshire,PastScape 63693,Q15133937,https://pleiades.stoa.org/places/79766,,E06000013,North Lincolnshire,England
+V0262,Apethorpe,52.54261,-0.48803,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Northamptonshire,PastScape 361757,Q139780754,,,E06000061,North Northamptonshire,England
+V0263,Apethorpe,52.54998,-0.49521,Pleiades representative point,,0,1,0,1,2,,,Q1967810,https://pleiades.stoa.org/places/79297,,E06000061,North Northamptonshire,England
+V0264,Ashley,52.51682,-0.83126,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Northamptonshire,PastScape 344086,,,,E06000061,North Northamptonshire,England
+V0265,Cotterstock,52.50727,-0.48084,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Northamptonshire,PastScape 361745,Q139832016,https://pleiades.stoa.org/places/79405,,E06000061,North Northamptonshire,England
+V0266,Fotheringhay,52.53737,-0.41065,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Northamptonshire,PastScape 361593,,,,E06000061,North Northamptonshire,England
+V0267,Great Weldon,52.49995,-0.63225,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Northamptonshire,PastScape 347512,Q139860800,,,E06000061,North Northamptonshire,England
+V0268,Great Weldon,52.49545,-0.63718,Pleiades representative point,,0,1,0,1,2,,,Q17647874,https://pleiades.stoa.org/places/79491,,E06000061,North Northamptonshire,England
+V0269,Meadow Furlong,52.33565,-0.57567,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Northamptonshire,PastScape 347335,Q125191671,https://pleiades.stoa.org/places/79695,node/6619894091,E06000061,North Northamptonshire,England
+V0270,North Lodge Farm,52.44058,-0.4209,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Northamptonshire,PastScape 361159,,,,E06000061,North Northamptonshire,England
+V0271,Priors Hall Roman site,52.51608,-0.63883,Wikidata P625,,0,1,0,0,1,,,Q123486090,,,E06000061,North Northamptonshire,England
+V0272,Ringstead,52.36301,-0.56738,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Northamptonshire,PastScape 347389,,,,E06000061,North Northamptonshire,England
+V0273,Roman villa,52.3571,-0.58531,Wikidata P625,,0,1,0,0,1,,,Q17646003,,,E06000061,North Northamptonshire,England
+V0274,Yarwell,52.57976,-0.43436,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Northamptonshire,PastScape 361372,,,,E06000061,North Northamptonshire,England
+V0275,Yarwell,52.56843,-0.42738,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Northamptonshire,PastScape 361340,,,,E06000061,North Northamptonshire,England
+V0276,Banwell,51.32937,-2.86506,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Somerset,PastScape 192470,Q17676075,,,E06000024,North Somerset,England
+V0277,Birdcombe,51.44085,-2.75135,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Somerset,PastScape 195364,,,,E06000024,North Somerset,England
+V0278,Portishead Roman villa,51.4755,-2.77019,Wikidata P625,,0,1,0,0,1,,,Q141563083,,,E06000024,North Somerset,England
+V0279,Roman Villa,51.32305,-2.86904,OpenStreetMap feature location,,0,0,1,0,1,,,,,node/1706098598,E06000024,North Somerset,England
+V0280,Wemberham,51.38294,-2.85601,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Somerset,PastScape 194992,,,,E06000024,North Somerset,England
+V0281,Mancetter Roman villa,52.5672,-1.51994,Wikidata P625,,0,1,0,0,1,,,Q141593729,,,E07000218,North Warwickshire,England
+V0282,Lockington,52.8613,-1.28776,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,Leicestershire,PastScape 315175,Q17645622,https://pleiades.stoa.org/places/79572,,E07000134,North West Leicestershire,England
+V0283,Aiskew,54.30038,-1.57894,"Wikipedia OS grid reference, square centre",1000.0,1,0,0,0,1,North Yorkshire,,,,,E06000065,North Yorkshire,England
+V0284,Beadlam,54.24889,-1.02811,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,North Yorkshire,PastScape 58835,Q4876064,https://pleiades.stoa.org/places/89113,way/270438953,E06000065,North Yorkshire,England
+V0285,Castle Dikes,54.17532,-1.55516,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,North Yorkshire,PastScape 52079,,https://pleiades.stoa.org/places/89140,,E06000065,North Yorkshire,England
+V0286,Chapel House Farm,54.46851,-1.53733,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,North Yorkshire,PastScape 1230878,,,,E06000065,North Yorkshire,England
+V0287,Holme House,54.50384,-1.59409,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/89200,,E06000065,North Yorkshire,England
+V0288,Hovingham,54.17278,-0.98685,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,North Yorkshire,PastScape 58446,,,,E06000065,North Yorkshire,England
+V0289,Kirk Sink,53.97766,-2.09366,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,North Yorkshire,PastScape 46569,Q17676449,https://pleiades.stoa.org/places/89217,way/153854723,E06000065,North Yorkshire,England
+V0290,Langton,54.09698,-0.75305,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,North Yorkshire,PastScape 61982,Q17643672,https://pleiades.stoa.org/places/89223,node/13596380797,E06000065,North Yorkshire,England
+V0291,Middleham,54.28049,-1.7947,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,North Yorkshire,PastScape 50870,,,,E06000065,North Yorkshire,England
+V0292,Piercebridge,54.53205,-1.65923,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,North Yorkshire,PastScape 23732,,,,E06000065,North Yorkshire,England
+V0293,Pond Head Farm,54.1632,-1.13618,"Wikipedia OS grid reference, square centre",1000.0,1,0,0,0,1,North Yorkshire,PastScape 56890,,,,E06000065,North Yorkshire,England
+V0294,Well,54.23145,-1.59505,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,North Yorkshire,PastScape 52235,,https://pleiades.stoa.org/places/89320,,E06000065,North Yorkshire,England
+V0295,Wharram Grange,54.07981,-0.7061,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,North Yorkshire,PastScape 1143533,,,,E06000065,North Yorkshire,England
+V0296,Wharram le Street,54.08485,-0.67384,"Wikipedia OS grid reference, square centre",100.0,1,0,0,1,2,North Yorkshire,PastScape 1315010,,https://pleiades.stoa.org/places/89322,,E06000065,North Yorkshire,England
+V0297,Ailsworth,52.5758,-0.35297,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79286,,E06000031,Peterborough,England
+V0298,Barnack,52.6467,-0.40462,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Cambridgeshire,PastScape 347802,,,,E06000031,Peterborough,England
+V0299,Castor,52.56149,-0.34029,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Cambridgeshire,PastScape 364439,Q17641401,https://pleiades.stoa.org/places/79379,,E06000031,Peterborough,England
+V0300,Helpston,52.62291,-0.34137,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Cambridgeshire,PastScape 350328,Q17641252,https://pleiades.stoa.org/places/79505,,E06000031,Peterborough,England
+V0301,Itter Crescent,52.60338,-0.25535,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Cambridgeshire,,,,,E06000031,Peterborough,England
+V0302,Orton Longueville,52.546,-0.26648,"Wikipedia OS grid reference, square centre",100.0,1,0,0,1,2,Cambridgeshire,PastScape 364221,,https://pleiades.stoa.org/places/933985295,,E06000031,Peterborough,England
+V0303,Pilsgate,52.64609,-0.43953,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Cambridgeshire,PastScape 347808,,,,E06000031,Peterborough,England
+V0304,Sacrewell Lodge,52.59134,-0.41254,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Cambridgeshire,PastScape 348090,,,,E06000031,Peterborough,England
+V0305,Site of Roman villa NE of Sibson Hollow,52.5673,-0.37187,Wikidata P625,,0,1,0,0,1,,,Q17641407,,,E06000031,Peterborough,England
+V0306,Brenscombe Farm,50.64421,-2.03113,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Dorset,PastScape 456839,,,,E07000051,Purbeck,England
+V0307,Bucknowle Farm,50.63286,-2.0669,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Dorset,PastScape 456872,Q117149017,https://pleiades.stoa.org/places/79359,,E07000051,Purbeck,England
+V0308,East Creech,50.64462,-2.09364,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Dorset,PastScape 456920,Q17670243,https://pleiades.stoa.org/places/930634471,,E07000051,Purbeck,England
+V0309,Wanstead,51.56558,0.04234,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Greater London,PastScape 408132,Q30674026,https://pleiades.stoa.org/places/79747,,E09000026,Redbridge,England
+V0310,Street House,54.56525,-0.84931,"Wikipedia OS grid reference, square centre",1000.0,1,0,0,0,1,North Yorkshire,,,,,E06000003,Redcar and Cleveland,England
+V0311,Banstead,51.28707,-0.24625,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Surrey,PastScape 400125,Q17650085,https://pleiades.stoa.org/places/79745,,E07000211,Reigate and Banstead,England
+V0312,Walton Heath,51.26875,-0.23591,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Surrey,PastScape 400396,,,,E07000211,Reigate and Banstead,England
+V0313,Car Colston,52.9749,-0.93019,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Nottinghamshire,PastScape 321937,Q141592866,https://pleiades.stoa.org/places/79376,,E07000176,Rushcliffe,England
+V0314,Glebe Farm,52.87988,-1.21858,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Nottinghamshire,PastScape 317772,Q17673573,https://pleiades.stoa.org/places/79320,,E07000176,Rushcliffe,England
+V0315,'Rutland',52.61666,-0.57354,"Wikipedia OS grid reference, square centre",1.0,1,1,1,1,4,Rutland,,Q109973603,https://pleiades.stoa.org/places/776638571,node/9393125595,E06000017,Rutland,England
+V0316,Empingham,52.65843,-0.60749,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Rutland,PastScape 325179,Q139858345,https://pleiades.stoa.org/places/79452,,E06000017,Rutland,England
+V0317,Great Casterton,52.67436,-0.51292,"Wikipedia OS grid reference, square centre",10.0,1,0,1,0,2,Rutland,PastScape 347942,,,node/633787448,E06000017,Rutland,England
+V0318,Thistleton,52.74456,-0.65408,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,Rutland,PastScape 325314,,https://pleiades.stoa.org/places/79712,,E06000017,Rutland,England
+V0319,Tixover,52.60589,-0.55201,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Rutland,PastScape 325200,Q141818736,https://pleiades.stoa.org/places/79716,,E06000017,Rutland,England
+V0320,Tadcaster,53.86227,-1.23263,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,North Yorkshire,PastScape 56512,Q17649096,,,E07000169,Selby,England
+V0321,Ash,51.36134,0.3089,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Kent,PastScape 413256,,,,E07000111,Sevenoaks,England
+V0322,Church Field Villa,51.31181,0.19421,OpenStreetMap feature location,,0,0,1,0,1,,,,,way/1429748145,E07000111,Sevenoaks,England
+V0323,Farningham,51.37874,0.21853,"Wikipedia OS grid reference, square centre",10.0,1,0,1,1,3,Kent,PastScape 410069,,https://pleiades.stoa.org/places/214034409,node/6928235915,E07000111,Sevenoaks,England
+V0324,Farningham,51.37777,0.2213,Pleiades representative point,,0,0,1,1,2,,,,https://pleiades.stoa.org/places/79461,node/6928327735,E07000111,Sevenoaks,England
+V0325,Franks,51.3846,0.23203,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Kent,PastScape 409879,Q17647299,https://pleiades.stoa.org/places/938515635,node/6928137159,E07000111,Sevenoaks,England
+V0326,Lullingstone,51.36422,0.19656,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Kent,PastScape 410045,Q17643870;Q1877182,https://pleiades.stoa.org/places/79582,way/295701157;node/256490027,E07000111,Sevenoaks,England
+V0327,Otford,51.31141,0.20279,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Kent,PastScape 409588,Q17641292,,,E07000111,Sevenoaks,England
+V0328,Acton Scott,52.50317,-2.79983,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Shropshire,PastScape 108871,Q1457014,https://pleiades.stoa.org/places/79282,,E06000051,Shropshire,England
+V0329,Ashford Carbonell,52.32001,-2.68898,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Shropshire,PastScape 912155,,,,E06000051,Shropshire,England
+V0330,Cruckton,52.68627,-2.84149,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Shropshire,PastScape 68458,Q17642333,,,E06000051,Shropshire,England
+V0331,Lea,52.67093,-2.86264,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Shropshire,PastScape 67687,Q17642338,,,E06000051,Shropshire,England
+V0332,Roman villa 200yds (180m) N of Acton Scott Hall,52.5032,-2.79832,Wikidata P625,,0,1,0,0,1,,,Q17642345,,,E06000051,Shropshire,England
+V0333,Roman villa at Linley Hall,52.5282,-2.96475,Wikidata P625,,0,1,0,0,1,,,Q17642367,,,E06000051,Shropshire,England
+V0334,Whitley Grange,52.68168,-2.80457,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Shropshire,PastScape 67621,,,,E06000051,Shropshire,England
+V0335,Yarchester,52.60459,-2.5824,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Shropshire,PastScape 72091,Q17646345;Q1270582,https://pleiades.stoa.org/places/79774,,E06000051,Shropshire,England
+V0336,Shapwick,51.15172,-2.82385,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Somerset,PastScape 1267212,,,,E06000066,Somerset,England
+V0337,"Star Roman villa, 275m north east of Wimblestone",51.3244,-2.81172,Wikidata P625,,0,1,0,0,1,,,Q17662091,,,E06000066,Somerset,England
+V0338,Bartlow,52.08056,0.3149,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Cambridgeshire,PastScape 374140,,,,E07000012,South Cambridgeshire,England
+V0339,Comberton,52.17495,0.02334,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Cambridgeshire,PastScape 368941,,,,E07000012,South Cambridgeshire,England
+V0340,Croydon,52.11761,-0.06697,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Cambridgeshire,PastScape 368572,,,,E07000012,South Cambridgeshire,England
+V0341,Great Wilbraham,52.19493,0.27841,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Cambridgeshire,PastScape 1095800,,,,E07000012,South Cambridgeshire,England
+V0342,Guilden Morden,52.04861,-0.14017,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Cambridgeshire,PastScape 365953,Q17641464,,,E07000012,South Cambridgeshire,England
+V0343,Guilden Morden,52.08075,-0.13291,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79495,,E07000012,South Cambridgeshire,England
+V0344,Ickleton,52.06651,0.18177,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,Cambridgeshire,PastScape 371050,Q17641445,https://pleiades.stoa.org/places/79524,,E07000012,South Cambridgeshire,England
+V0345,Linton,52.0913,0.29896,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Cambridgeshire,PastScape 374014,Q66480809,,,E07000012,South Cambridgeshire,England
+V0346,Litlington,52.0651,-0.08653,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Cambridgeshire,PastScape 368682,Q139882731,https://pleiades.stoa.org/places/79568,,E07000012,South Cambridgeshire,England
+V0347,Roman Villa,52.30253,-0.0446,OpenStreetMap feature location,,0,0,1,0,1,,,,,node/3733137830,E07000012,South Cambridgeshire,England
+V0348,Teversham,52.19557,0.19269,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Cambridgeshire,PastScape 371259,,,,E07000012,South Cambridgeshire,England
+V0349,Cheyney Court,51.42683,-2.43936,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Gloucestershire,PastScape 200843,,,,E06000025,South Gloucestershire,England
+V0350,Cold Harbour Farm,51.44555,-2.42349,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Gloucestershire,PastScape 204952,,,,E06000025,South Gloucestershire,England
+V0351,Ironmongers Piece,51.48282,-2.29149,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Gloucestershire,PastScape 204850,,,,E06000025,South Gloucestershire,England
+V0352,Priest Wood,51.60566,-2.45502,"Wikipedia OS grid reference, square centre",10.0,1,1,1,0,3,Gloucestershire,PastScape 201442,Q17647120,,node/6935821538,E06000025,South Gloucestershire,England
+V0353,"Roman villa and bathhouse remains in Lower Woods, 115m north west of Lower Woods Lodge",51.5919,-2.36973,Wikidata P625,,0,1,0,0,1,,,Q17664204,,,E06000025,South Gloucestershire,England
+V0354,"Roman villa and earlier settlement remains in Badminton Park, 340m south of Hinnegar Lodges",51.5695,-2.27431,Wikidata P625,,0,1,0,0,1,,,Q17663945,,,E06000025,South Gloucestershire,England
+V0355,Roman villa remains 290m south east of Springfield Farm,51.5661,-2.37204,Wikidata P625,,0,1,0,0,1,,,Q17664208,,,E06000025,South Gloucestershire,England
+V0356,Stoke Gifford Roman villa,51.49643,-2.56391,Wikidata P625,,0,1,0,0,1,,,Q141563078,,,E06000025,South Gloucestershire,England
+V0357,Tockington Park,51.56853,-2.53919,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Gloucestershire,PastScape 201524,Q15133930,https://pleiades.stoa.org/places/79718,,E06000025,South Gloucestershire,England
+V0358,Wick,51.45155,-2.41155,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79762,,E06000025,South Gloucestershire,England
+V0359,Denton,52.86886,-0.70015,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Lincolnshire,PastScape 323786,Q139857957,https://pleiades.stoa.org/places/79418,,E07000141,South Kesteven,England
+V0360,Stainby,52.78996,-0.63496,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Lincolnshire,PastScape 325510,,,,E07000141,South Kesteven,England
+V0361,Stoke Rochford,52.8459,-0.61316,"Wikipedia OS grid reference, square centre",1000.0,1,0,0,0,1,Lincolnshire,PastScape 325445,,,,E07000141,South Kesteven,England
+V0362,Caistor St Edmund villa,52.5664,1.31303,Wikidata P625,,0,1,0,0,1,,,Q140175808,,,E07000149,South Norfolk,England
+V0363,Tivetshall,52.4143,1.18128,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Norfolk,PastScape 389215,,,,E07000149,South Norfolk,England
+V0364,Chipping Warden,52.12998,-1.25499,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Northamptonshire,PastScape 339306,Q17643885,,,E07000155,South Northamptonshire,England
+V0365,Cosgrove,52.0718,-0.8419,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Northamptonshire,PastScape 343100,Q17647704,,,E07000155,South Northamptonshire,England
+V0366,Cosgrove,52.07531,-0.8483,Pleiades representative point,,0,1,0,1,2,,,Q11691558,https://pleiades.stoa.org/places/79404,,E07000155,South Northamptonshire,England
+V0367,Deanshanger,52.04989,-0.87783,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,Northamptonshire,PastScape 342874,Q139857954,https://pleiades.stoa.org/places/79415,,E07000155,South Northamptonshire,England
+V0368,Harpole,52.2331,-1.00009,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Northamptonshire,PastScape 341461,Q137919525,https://pleiades.stoa.org/places/438961574,,E07000155,South Northamptonshire,England
+V0369,Harpole,52.25272,-0.9916,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Northamptonshire,PastScape 341732,Q17647897,https://pleiades.stoa.org/places/79503,,E07000155,South Northamptonshire,England
+V0370,Nether Heyford,52.22208,-1.02538,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Northamptonshire,PastScape 341458,,,,E07000155,South Northamptonshire,England
+V0371,Piddington,52.1798,-0.83456,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Northamptonshire,PastScape 343312,Q6531640,https://pleiades.stoa.org/places/79640,node/2441923331,E07000155,South Northamptonshire,England
+V0372,Quinton,52.17477,-0.86738,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Northamptonshire,PastScape 343322,,,,E07000155,South Northamptonshire,England
+V0373,Stoke Bruerne,52.14346,-0.89864,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Northamptonshire,PastScape 343315,Q17647732,,,E07000155,South Northamptonshire,England
+V0374,Thenford,52.07015,-1.23512,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Northamptonshire,PastScape 339407,Q17647746,https://pleiades.stoa.org/places/79711,,E07000155,South Northamptonshire,England
+V0375,Whitehall Farm,52.22094,-1.05724,"Wikipedia OS grid reference, square centre",1000.0,1,0,0,0,1,Northamptonshire,,,,,E07000155,South Northamptonshire,England
+V0376,Whittlebury,52.09468,-0.93254,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Northamptonshire,PastScape 343177,,,,E07000155,South Northamptonshire,England
+V0377,Whittlebury,52.09026,-0.99198,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79759,,E07000155,South Northamptonshire,England
+V0378,Ditchend,51.69803,-1.0986,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Oxfordshire,PastScape 340827,Q121865308,https://pleiades.stoa.org/places/875950353,way/1202356391,E07000179,South Oxfordshire,England
+V0379,Elsfield,51.77658,-1.2056,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Oxfordshire,PastScape 338425,,,,E07000179,South Oxfordshire,England
+V0380,Gatehampton,51.51489,-1.13666,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Oxfordshire,PastScape 1401795,,,,E07000179,South Oxfordshire,England
+V0381,Harpsden,51.51814,-0.91105,"Wikipedia OS grid reference, square centre",10.0,1,0,1,0,2,Oxfordshire,PastScape 245276,,,node/2752599560,E07000179,South Oxfordshire,England
+V0382,High Wood Roman Villa,51.50997,-0.91897,OpenStreetMap feature location,,0,0,1,0,1,,,,,node/6092811048,E07000179,South Oxfordshire,England
+V0383,Wheatley,51.73518,-1.12407,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Oxfordshire,PastScape 340823,,,,E07000179,South Oxfordshire,England
+V0384,Bratton Seymour,51.0675,-2.47655,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Somerset,PastScape 199624,,,,E07000189,South Somerset,England
+V0385,Catsgore Roman villa,51.03155,-2.71312,Wikidata P625,,0,1,0,0,1,,,Q139831325,,,E07000189,South Somerset,England
+V0386,Combe St. Nicholas,50.89738,-2.99459,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79398,,E07000189,South Somerset,England
+V0387,Compton Dundon,51.07647,-2.72701,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Somerset,PastScape 194010,,,,E07000189,South Somerset,England
+V0388,Dinnington,50.91832,-2.84852,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Somerset,PastScape 193485,,,,E07000189,South Somerset,England
+V0389,East Coker,50.92164,-2.6472,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Somerset,PastScape 196215,Q1291591,https://pleiades.stoa.org/places/79443,,E07000189,South Somerset,England
+V0390,Ham Hill,50.94561,-2.72967,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Somerset,PastScape 193155,Q36485663,,,E07000189,South Somerset,England
+V0391,High Ham,51.06214,-2.82639,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Somerset,PastScape 193634,Q139861034,https://pleiades.stoa.org/places/79513,node/3306257762,E07000189,South Somerset,England
+V0392,Hurcot,51.06477,-2.69872,"Wikipedia OS grid reference, square centre",10.0,1,0,1,0,2,Somerset,PastScape 196343,,,node/1159373476,E07000189,South Somerset,England
+V0393,Ilchester,50.99653,-2.69641,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Somerset,PastScape 196528,Q15133924,https://pleiades.stoa.org/places/79527,,E07000189,South Somerset,England
+V0394,Lopen,50.92215,-2.81587,"Wikipedia OS grid reference, square centre",100.0,1,1,0,0,2,Somerset,PastScape 1391028,Q4558650,,,E07000189,South Somerset,England
+V0395,Low Ham,51.05616,-2.80674,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Somerset,PastScape 193640,Q2202563,https://pleiades.stoa.org/places/79579,node/12167540665,E07000189,South Somerset,England
+V0396,Lufton,50.95798,-2.6917,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Somerset,PastScape 196068,Q17641996,https://pleiades.stoa.org/places/79581,,E07000189,South Somerset,England
+V0397,Melbury Roman villa,51.0443,-2.7441,Wikidata P625,,0,1,1,0,2,,,Q17646491,,node/1159373180,E07000189,South Somerset,England
+V0398,Pitney,51.06727,-2.78552,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Somerset,PastScape 194019,Q2202554,https://pleiades.stoa.org/places/79641,node/11113044770,E07000189,South Somerset,England
+V0399,Somerton,51.05853,-2.71888,"Wikipedia OS grid reference, square centre",10.0,1,0,1,0,2,Somerset,PastScape 193535,,,node/1159373337,E07000189,South Somerset,England
+V0400,Wadeford,50.88979,-2.984,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Somerset,PastScape 191803,Q17642104,,,E07000189,South Somerset,England
+V0401,West Coker,50.92217,-2.67218,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,Somerset,PastScape 196297,Q17642100;Q133521415,https://pleiades.stoa.org/places/70083736,,E07000189,South Somerset,England
+V0402,Westland,50.93901,-2.64346,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Somerset,PastScape 196095,,,,E07000189,South Somerset,England
+V0403,Whitestaunton,50.89025,-3.02467,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Somerset,PastScape 190400,Q17641854,https://pleiades.stoa.org/places/79756,,E07000189,South Somerset,England
+V0404,Wincanton,51.05232,-2.42631,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Somerset,PastScape 202365,,,,E07000189,South Somerset,England
+V0405,Yeovil,50.94362,-2.62984,Pleiades representative point,,0,1,0,1,2,,,Q139859321,https://pleiades.stoa.org/places/79775,,E07000189,South Somerset,England
+V0406,roman villa,51.0409,-2.67818,OpenStreetMap feature location,,0,0,1,0,1,,,,,node/1159373554,E07000189,South Somerset,England
+V0407,roman villa,50.99939,-2.72417,OpenStreetMap feature location,,0,0,1,0,1,,,,,node/1159373187,E07000189,South Somerset,England
+V0408,Acton Trussell,52.75552,-2.09404,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Staffordshire,PastScape 77144,,,,E07000196,South Staffordshire,England
+V0409,Engleton,52.6897,-2.15745,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Staffordshire,PastScape 75403,Q2525685,https://pleiades.stoa.org/places/79453,,E07000196,South Staffordshire,England
+V0410,Gorhambury,51.75896,-0.3822,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Hertfordshire,PastScape 361934,Q21037268,https://pleiades.stoa.org/places/79485,,E07000240,St Albans,England
+V0411,Park Street,51.71478,-0.34122,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Hertfordshire,PastScape 362066,Q140449816,https://pleiades.stoa.org/places/79637,node/258316432,E07000240,St Albans,England
+V0412,Ixworth Roman villa,52.29367,0.84369,Pleiades representative point,,0,1,0,1,2,,,Q17641515,https://pleiades.stoa.org/places/645179388,,E07000204,St Edmundsbury,England
+V0413,Lidgate,52.18545,0.53204,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Suffolk,PastScape 379484,Q17646610,https://pleiades.stoa.org/places/79563,,E07000204,St Edmundsbury,England
+V0414,Pakenham,52.29077,0.78633,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Suffolk,PastScape 385187,,,,E07000204,St Edmundsbury,England
+V0415,Rougham,52.22094,0.79614,Pleiades representative point,,0,1,0,1,2,,,Q17641052,https://pleiades.stoa.org/places/79661,,E07000204,St Edmundsbury,England
+V0416,Stanton Chare,52.33148,0.86852,"Wikipedia OS grid reference, square centre",100.0,1,1,0,0,2,Suffolk,PastScape 385417,Q17641121,,,E07000204,St Edmundsbury,England
+V0417,Quarry Farm,54.52885,-1.3255,"Wikipedia OS grid reference, square centre",100.0,1,1,0,0,2,North Yorkshire,PastScape 1314853,Q106399274,,,E06000004,Stockton-on-Tees,England
+V0418,Chesterton villa,52.22235,-1.48748,Pleiades representative point,,0,1,0,1,2,,,Q17674963,https://pleiades.stoa.org/places/187106386,,E07000221,Stratford-on-Avon,England
+V0419,Roman villa N of Ireland Farm,52.1753,-1.46589,Wikidata P625,,0,1,0,0,1,,,Q17643563,,,E07000221,Stratford-on-Avon,England
+V0420,Snowford Bridge,52.2984,-1.42007,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Warwickshire,PastScape 335483,Q139882772,https://pleiades.stoa.org/places/79575,,E07000221,Stratford-on-Avon,England
+V0421,Frocester Court,51.72283,-2.31273,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Gloucestershire,PastScape 113199,Q15133970,https://pleiades.stoa.org/places/79471,,E07000082,Stroud,England
+V0422,Highfold,51.79041,-2.20779,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Gloucestershire,PastScape 115532,Q17645840,,,E07000082,Stroud,England
+V0423,Lillyhorn,51.7381,-2.12703,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Gloucestershire,PastScape 117310,Q17645679,https://pleiades.stoa.org/places/343752424,node/485362399,E07000082,Stroud,England
+V0424,St Peters Church,51.72772,-2.33288,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Gloucestershire,PastScape 113220,,,,E07000082,Stroud,England
+V0425,Stancombe,51.6714,-2.37542,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Gloucestershire,PastScape 205263,,,,E07000082,Stroud,England
+V0426,Tresham,51.60984,-2.28516,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Gloucestershire,PastScape 209247,,,,E07000082,Stroud,England
+V0427,Woodchester,51.72652,-2.23356,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Gloucestershire,PastScape 115125,Q1690886,https://pleiades.stoa.org/places/79768,node/11146239306,E07000082,Stroud,England
+V0428,Wortley,51.62494,-2.33502,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Gloucestershire,PastScape 765487,Q131912678,https://pleiades.stoa.org/places/590342556,,E07000082,Stroud,England
+V0429,Farnham,52.17256,1.46644,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Suffolk,PastScape 391328,,,,E07000205,Suffolk Coastal,England
+V0430,Beddington,51.37657,-0.13693,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Greater London,PastScape 400597,Q17644967,https://pleiades.stoa.org/places/79323,,E09000029,Sutton,England
+V0431,Bax Farm,51.34255,0.79562,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Kent,PastScape 1316061,Q136995636,https://pleiades.stoa.org/places/61092263,,E07000113,Swale,England
+V0432,Boxted,51.36519,0.66166,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Kent,PastScape 418307,Q17647286,https://pleiades.stoa.org/places/82140844,,E07000113,Swale,England
+V0433,Faversham,51.31873,0.89866,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Kent,PastScape 463687,Q138318736,https://pleiades.stoa.org/places/261199605,,E07000113,Swale,England
+V0434,Hartlip,51.34597,0.6245,"Wikipedia OS grid reference, square centre",10.0,1,0,1,0,2,Kent,PastScape 418600,,,node/255114776,E07000113,Swale,England
+V0435,Luddenham,51.32859,0.83561,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Kent,PastScape 1316075,,,,E07000113,Swale,England
+V0436,Newbury,51.30498,0.76062,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Kent,PastScape 1316263,,,,E07000113,Swale,England
+V0437,Chiseldon,51.52718,-1.72139,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Wiltshire,PastScape 222007,,,,E06000030,Swindon,England
+V0438,Groundwell Ridge Roman villa,51.6036,-1.79955,Wikidata P625,,0,1,0,0,1,,,Q17676223,,,E06000030,Swindon,England
+V0439,Hannington,51.66119,-1.73979,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Wiltshire,PastScape 222138,,,,E06000030,Swindon,England
+V0440,Stanton Fitzwarren,51.61041,-1.7512,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Wiltshire,PastScape 222169,Q17663542,,,E06000030,Swindon,England
+V0441,Starveall Farm,51.53258,-1.62765,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Wiltshire,PastScape 225577,Q17663400,,,E06000030,Swindon,England
+V0442,Roman Villa,51.25435,-0.10656,OpenStreetMap feature location,,0,0,1,0,1,,,,,node/290005432,E07000215,Tandridge,England
+V0443,Romano-British villa at Chelsham Court Farm,51.309,-0.00991,Wikidata P625,,0,1,0,0,1,,,Q17673771,,,E07000215,Tandridge,England
+V0444,Titsey Park,51.27301,0.01257,"Wikipedia OS grid reference, square centre",10.0,1,1,1,0,3,Surrey,PastScape 407426,Q17640966,,node/288250604,E07000215,Tandridge,England
+V0445,Alresford,51.83997,0.99026,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Essex,PastScape 385970,Q139766235,https://pleiades.stoa.org/places/79291,,E07000076,Tendring,England
+V0446,Brightlingsea,51.82918,0.9865,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Essex,PastScape 385972,,,,E07000076,Tendring,England
+V0447,Little Oakley,51.91556,1.23169,"Wikipedia OS grid reference, square centre",100.0,1,0,0,1,2,Essex,PastScape 389512,,https://pleiades.stoa.org/places/950859523,,E07000076,Tendring,England
+V0448,Abbotts Ann,51.17552,-1.55171,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Hampshire,PastScape 228300,Q139765729,https://pleiades.stoa.org/places/79277,,E07000093,Test Valley,England
+V0449,Appleshaw,51.2272,-1.56939,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 228060,,,,E07000093,Test Valley,England
+V0450,Clanville,51.23909,-1.5508,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Hampshire,PastScape 228030,Q17649900,https://pleiades.stoa.org/places/79391,,E07000093,Test Valley,England
+V0451,Fullerton,51.15861,-1.46522,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 227344,,,,E07000093,Test Valley,England
+V0452,Fyfield,51.25097,-1.57834,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 224368,,,,E07000093,Test Valley,England
+V0453,Grateley,51.16803,-1.60592,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Hampshire,PastScape 223994,,,,E07000093,Test Valley,England
+V0454,Longstock,51.12384,-1.51277,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Hampshire,PastScape 227553,Q140276698,https://pleiades.stoa.org/places/79577,,E07000093,Test Valley,England
+V0455,Roman villa N of Fernhill Farm,51.0368,-1.45386,Wikidata P625,,0,1,0,0,1,,,Q17642806,,,E07000093,Test Valley,England
+V0456,Thruxton,51.2088,-1.58438,Pleiades representative point,,0,1,0,1,2,,,Q124791408,https://pleiades.stoa.org/places/79713,,E07000093,Test Valley,England
+V0457,Tidbury,51.18369,-1.33916,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 232181,,,,E07000093,Test Valley,England
+V0458,West Dean,51.04272,-1.63344,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Wiltshire,PastScape 222998,Q17647330,https://pleiades.stoa.org/places/79751,,E07000093,Test Valley,England
+V0459,Dryhill,51.85052,-2.10063,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Gloucestershire,PastScape 117453,Q17643523,https://pleiades.stoa.org/places/462542425,way/898590860,E07000083,Tewkesbury,England
+V0460,Great Witcombe,51.82673,-2.14745,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Gloucestershire,PastScape 115513,Q5600255,https://pleiades.stoa.org/places/79492,way/32196058,E07000083,Tewkesbury,England
+V0461,"Romano-British villa 170m south west of Winchcombe School, Greet Road",51.9627,-1.96605,Wikidata P625,,0,1,0,0,1,,,Q17664192,,,E07000083,Tewkesbury,England
+V0462,Spoonley Wood,51.92966,-1.93589,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Gloucestershire,PastScape 327838,Q12069819,https://pleiades.stoa.org/places/79693,node/617403039,E07000083,Tewkesbury,England
+V0463,Wadfield Farm,51.93291,-1.96745,"Wikipedia OS grid reference, square centre",10.0,1,1,1,0,3,Gloucestershire,PastScape 327832,Q17643512,,way/868388255,E07000083,Tewkesbury,England
+V0464,Willington Court,51.91659,-2.236,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Gloucestershire,PastScape 115715,Q15133933,,,E07000083,Tewkesbury,England
+V0465,Abbey Farm,51.33371,1.32003,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Kent,PastScape 469621,,,,E07000114,Thanet,England
+V0466,Kings Langley,51.70863,-0.44051,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Hertfordshire,PastScape 359335,,,,E07000102,Three Rivers,England
+V0467,Moor Park,51.62982,-0.44098,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Hertfordshire,PastScape 395289,Q17641687,,,E07000102,Three Rivers,England
+V0468,Mucking,51.49822,0.40954,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Essex,PastScape 1302380,,,,E06000034,Thurrock,England
+V0469,Eccles,51.31861,0.46836,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Kent,PastScape 416441,Q17673603;Q65118227,https://pleiades.stoa.org/places/79448,,E07000115,Tonbridge and Malling,England
+V0470,Plaxtol,51.25452,0.31272,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Kent,PastScape 412963,,,,E07000115,Tonbridge and Malling,England
+V0471,Snodland,51.33159,0.44968,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Kent,PastScape 416478,Q17643883,,,E07000115,Tonbridge and Malling,England
+V0472,Ashdon,52.06717,0.3005,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Essex,PastScape 374158,,,,E07000077,Uttlesford,England
+V0473,Hallingbury,51.82616,0.16397,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Essex,PastScape 369973,,,,E07000077,Uttlesford,England
+V0474,Little Dunmow,51.865,0.41603,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Essex,PastScape 376402,,,,E07000077,Uttlesford,England
+V0475,Stebbing,51.89351,0.43565,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Essex,PastScape 376358,,,,E07000077,Uttlesford,England
+V0476,Stebbing Green,51.8831,0.45194,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Essex,PastScape 376366,,,,E07000077,Uttlesford,England
+V0477,Wendens Ambo,52.0024,0.19613,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,Essex,PastScape 373695,Q17646379,https://pleiades.stoa.org/places/79749,,E07000077,Uttlesford,England
+V0478,Alfred's Castle,51.5383,-1.60149,Wikidata P625,,0,1,0,0,1,,,Q4722169,,,E07000180,Vale of White Horse,England
+V0479,Barton Court Farm,51.67621,-1.26311,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,Oxfordshire,PastScape 238005,Q139801618,https://pleiades.stoa.org/places/79318,,E07000180,Vale of White Horse,England
+V0480,Dropshort,51.64169,-1.28715,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Oxfordshire,PastScape 234105,Q140763713,https://pleiades.stoa.org/places/79702,,E07000180,Vale of White Horse,England
+V0481,Frilford,51.67257,-1.38992,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Oxfordshire,PastScape 234025,Q139858664,https://pleiades.stoa.org/places/79470,,E07000180,Vale of White Horse,England
+V0482,Garford,51.65592,-1.36962,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Oxfordshire,PastScape 1516137,,,,E07000180,Vale of White Horse,England
+V0483,Stanford in the Vale,51.6538,-1.53169,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Oxfordshire,PastScape 662144,,,,E07000180,Vale of White Horse,England
+V0484,West Challow,51.58866,-1.45903,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Oxfordshire,PastScape 229123,Q17643547,,,E07000180,Vale of White Horse,England
+V0485,Woolstone,51.58809,-1.58216,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,Oxfordshire,PastScape 225384,,https://pleiades.stoa.org/places/79770,,E07000180,Vale of White Horse,England
+V0486,Radford Semele,52.2592,-1.49955,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,Warwickshire,PastScape 335629,,https://pleiades.stoa.org/places/79650,,E07000222,Warwick,England
+V0487,Binscombe,51.20543,-0.61217,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Surrey,PastScape 968706,,,,E07000216,Waverley,England
+V0488,Chiddingfold,51.11589,-0.6035,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Surrey,PastScape 249940,Q17640873,,,E07000216,Waverley,England
+V0489,Ewhurst,51.15387,-0.44152,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79456,,E07000216,Waverley,England
+V0490,Farnham,51.21398,-0.79561,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79460,,E07000216,Waverley,England
+V0491,Rapsley,51.16278,-0.45635,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Surrey,PastScape 393954,Q124369960,,,E07000216,Waverley,England
+V0492,Hartfield,51.06878,0.05922,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,East Sussex,PastScape 407127,Q17678623,,,E07000065,Wealden,England
+V0493,Villa Rustica (Brighton),50.83611,0.14167,Wikidata P625,,0,1,0,0,1,,,Q16857785,,,E07000065,Wealden,England
+V0494,Roman villa 200m W of Doddington Mill,52.2634,-0.72243,Wikidata P625,,0,1,0,0,1,,,Q17643970,,,E07000156,Wellingborough,England
+V0495,Wollaston,52.27573,-0.68093,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Northamptonshire,PastScape 347131,Q17646126,,,E07000156,Wellingborough,England
+V0496,Wollaston,52.25367,-0.67822,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Northamptonshire,PastScape 347126,,,,E07000156,Wellingborough,England
+V0497,Dicket Mead,51.8291,-0.20844,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Hertfordshire,PastScape 364864,Q7982152,https://pleiades.stoa.org/places/79573,,E07000241,Welwyn Hatfield,England
+V0498,Lockleys,51.83075,-0.20518,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Hertfordshire,PastScape 364820,Q17662605,,,E07000241,Welwyn Hatfield,England
+V0499,Aldermaston Wharf,51.40915,-1.13082,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Berkshire,PastScape 240982,,,,E06000037,West Berkshire,England
+V0500,Basildon,51.50932,-1.12538,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Berkshire,PastScape 241288,,,,E06000037,West Berkshire,England
+V0501,Birch Farm,51.46116,-1.23923,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Berkshire,PastScape 237393,,,,E06000037,West Berkshire,England
+V0502,Boxford Roman villa,51.44431,-1.36726,Wikidata P625,,0,1,0,0,1,,,Q128413154,,,E06000037,West Berkshire,England
+V0503,Eling Farm,51.47358,-1.23492,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Berkshire,PastScape 237286,Q17641801,,,E06000037,West Berkshire,England
+V0504,Kintbury,51.40206,-1.43478,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Berkshire,PastScape 228668,,,,E06000037,West Berkshire,England
+V0505,Maddle Farm,51.54375,-1.56663,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,Berkshire,PastScape 229360,Q140277005,https://pleiades.stoa.org/places/79585,,E06000037,West Berkshire,England
+V0506,Maidenhatch,51.45968,-1.11251,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Berkshire,PastScape 241612,,,,E06000037,West Berkshire,England
+V0507,Pangbourne,51.48299,-1.08782,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79635,,E06000037,West Berkshire,England
+V0508,Well House Farm,51.44984,-1.24812,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Berkshire,PastScape 237389,,,,E06000037,West Berkshire,England
+V0509,Dewlish,50.77396,-2.3306,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Dorset,PastScape 454480,Q139858014,https://pleiades.stoa.org/places/79421,,E07000052,West Dorset,England
+V0510,Druce Farm,50.76752,-2.36296,"Wikipedia OS grid reference, square centre",1000.0,1,0,0,0,1,Dorset,,,,,E07000052,West Dorset,England
+V0511,Frampton,50.75588,-2.54596,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Dorset,PastScape 453174,Q17650665,https://pleiades.stoa.org/places/79468,,E07000052,West Dorset,England
+V0512,Halstock,50.86579,-2.66376,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Dorset,PastScape 195721,Q15133921,https://pleiades.stoa.org/places/79499,,E07000052,West Dorset,England
+V0513,Lenthay,50.93587,-2.53568,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Dorset,PastScape 199497,Q139882671,https://pleiades.stoa.org/places/79558,,E07000052,West Dorset,England
+V0514,Roman villa SE of East Farm,50.9348,-2.58169,Wikidata P625,,0,1,0,0,1,,,Q17647983,,,E07000052,West Dorset,England
+V0515,Thornford,50.92074,-2.57819,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Dorset,PastScape 196188,Q17647974,,,E07000052,West Dorset,England
+V0516,Walls Field,50.75296,-2.47306,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Dorset,PastScape 453248,,,,E07000052,West Dorset,England
+V0517,Wynford Eagle,50.75528,-2.60315,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Dorset,PastScape 450700,,,,E07000052,West Dorset,England
+V0518,Claxby,53.43838,-0.32593,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79392,,E07000142,West Lindsey,England
+V0519,Glentworth Hall,53.38299,-0.58261,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Lincolnshire,PastScape 920235,,,,E07000142,West Lindsey,England
+V0520,Greetwell,53.23185,-0.4807,Pleiades representative point,,0,1,0,1,2,,,Q124809055,https://pleiades.stoa.org/places/79493,,E07000142,West Lindsey,England
+V0521,Kirmond le Mire,53.42098,-0.22055,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,Lincolnshire,PastScape 893061,Q17645931,https://pleiades.stoa.org/places/79548,,E07000142,West Lindsey,England
+V0522,Scampton,53.29463,-0.56828,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Lincolnshire,PastScape 326410,Q15133928,https://pleiades.stoa.org/places/79674,,E07000142,West Lindsey,England
+V0523,Sudbrooke,53.27579,-0.44556,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Lincolnshire,PastScape 1589635,,,,E07000142,West Lindsey,England
+V0524,Walesby,53.41796,-0.27508,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,Lincolnshire,PastScape 351895,,https://pleiades.stoa.org/places/79743,,E07000142,West Lindsey,England
+V0525,Borough Hill,52.26395,-1.13831,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Northamptonshire,PastScape 339861,Q4946316,,,E06000062,West Northamptonshire,England
+V0526,Brixworth,52.33988,-0.90566,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Northamptonshire,PastScape 962749,Q139806868,https://pleiades.stoa.org/places/79358,,E06000062,West Northamptonshire,England
+V0527,Byfield,52.18688,-1.26055,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Northamptonshire,PastScape 339748,,,,E06000062,West Northamptonshire,England
+V0528,Daventry,52.25827,-1.16041,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79414,,E06000062,West Northamptonshire,England
+V0529,Wootton,52.21754,-0.92191,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Northamptonshire,PastScape 343298,,,,E06000062,West Northamptonshire,England
+V0530,Asthall,51.79868,-1.56253,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Oxfordshire,PastScape 334805,Q17676859,,,E07000181,West Oxfordshire,England
+V0531,Brize Lodge,51.83488,-1.50891,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Oxfordshire,PastScape 334723,,,,E07000181,West Oxfordshire,England
+V0532,Callow Hill,51.87199,-1.40625,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Oxfordshire,PastScape 336638,Q17662632,https://pleiades.stoa.org/places/921321518,node/9670666501,E07000181,West Oxfordshire,England
+V0533,Ditchley,51.87791,-1.42128,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Oxfordshire,PastScape 334944,Q17650207,https://pleiades.stoa.org/places/79422,,E07000181,West Oxfordshire,England
+V0534,Fawler,51.84942,-1.46172,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Oxfordshire,PastScape 334566,Q17669552,,,E07000181,West Oxfordshire,England
+V0535,Great Tew,51.9444,-1.41214,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Oxfordshire,PastScape 336845,Q17642791,https://pleiades.stoa.org/places/79490,,E07000181,West Oxfordshire,England
+V0536,North Leigh,51.83594,-1.42516,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Oxfordshire,PastScape 334573,Q1705995,https://pleiades.stoa.org/places/79618,way/28855856,E07000181,West Oxfordshire,England
+V0537,Oaklands Farm,51.84739,-1.45071,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Oxfordshire,PastScape 334563,Q17658778,,,E07000181,West Oxfordshire,England
+V0538,Roman villa,51.867,-1.34422,Wikidata P625,,0,1,0,0,1,,,Q17642764,,,E07000181,West Oxfordshire,England
+V0539,Shakenoak,51.82202,-1.45805,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,Oxfordshire,PastScape 334742,Q121842844,https://pleiades.stoa.org/places/79681,,E07000181,West Oxfordshire,England
+V0540,Stonesfield,51.85075,-1.42018,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Oxfordshire,PastScape 336649,Q17642849,https://pleiades.stoa.org/places/79697,,E07000181,West Oxfordshire,England
+V0541,Widford,51.80465,-1.59829,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Oxfordshire,PastScape 332368,,,,E07000181,West Oxfordshire,England
+V0542,Exning,52.28285,0.36194,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Suffolk,PastScape 377367,Q139858393,https://pleiades.stoa.org/places/79457,,E07000245,West Suffolk,England
+V0543,Horselands,52.31762,0.61105,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Suffolk,PastScape 379957,Q17641303,,,E07000245,West Suffolk,England
+V0544,Preston,50.64327,-2.42147,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Dorset,PastScape 454283,Q17650797,,,E07000053,Weymouth and Portland,England
+V0545,Allington,51.14391,-1.70554,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Wiltshire,PastScape 223270,,,,E06000054,Wiltshire,England
+V0546,Atworth,51.39649,-2.20902,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Wiltshire,PastScape 207925,,,,E06000054,Wiltshire,England
+V0547,Bedwyn,51.36496,-1.5941,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Wiltshire,PastScape 224845,Q17648665,https://pleiades.stoa.org/places/79324,,E06000054,Wiltshire,England
+V0548,Box,51.41564,-2.25555,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Wiltshire,PastScape 207955,Q17669563,https://pleiades.stoa.org/places/79341,,E06000054,Wiltshire,England
+V0549,Bradford on Avon,51.35098,-2.26337,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Wiltshire,PastScape 867326,Q141169854,,,E06000054,Wiltshire,England
+V0550,Brixton Deverill,51.1487,-2.19889,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Wiltshire,,Q66480731,,,E06000054,Wiltshire,England
+V0551,Bromham,51.39487,-2.04329,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Wiltshire,PastScape 211997,,,,E06000054,Wiltshire,England
+V0552,Browns Farm,51.40939,-1.72397,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Wiltshire,PastScape 969756,,,,E06000054,Wiltshire,England
+V0553,Colerne,51.44532,-2.27262,"Wikipedia OS grid reference, square centre",100.0,1,1,1,1,4,Wiltshire,PastScape 208491,Q139831694,https://pleiades.stoa.org/places/79396,node/2696871237,E06000054,Wiltshire,England
+V0554,Downton,50.9887,-1.74286,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Wiltshire,PastScape 217913,Q139858089,https://pleiades.stoa.org/places/79426,,E06000054,Wiltshire,England
+V0555,Enford Roman villa,51.2668,-1.80612,Wikidata P625,,0,1,0,0,1,,,Q17648638,,,E06000054,Wiltshire,England
+V0556,Grimstead,51.04624,-1.66793,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Wiltshire,PastScape 223061,Q17643364,,,E06000054,Wiltshire,England
+V0557,Hazelbury,51.41213,-2.23504,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Wiltshire,PastScape 207977,,,,E06000054,Wiltshire,England
+V0558,Lay Wood,51.36561,-1.96045,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Wiltshire,,,,,E06000054,Wiltshire,England
+V0559,Littlecote,51.43321,-1.56962,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Wiltshire,PastScape 229119,Q1416983,https://pleiades.stoa.org/places/79569,way/259693519,E06000054,Wiltshire,England
+V0560,Manningford Bruce,51.32143,-1.80012,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Wiltshire,PastScape 220193,,,,E06000054,Wiltshire,England
+V0561,Netheravon,51.23239,-1.78991,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Wiltshire,PastScape 218930,Q140277418,https://pleiades.stoa.org/places/79608,,E06000054,Wiltshire,England
+V0562,Nuthills Farm,51.41394,-2.04546,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Wiltshire,PastScape 212025,Q17642998,,,E06000054,Wiltshire,England
+V0563,Pit Meads,51.18929,-2.14376,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Wiltshire,PastScape 211416,,,,E06000054,Wiltshire,England
+V0564,Romano-British villa at Kingshill Farm,51.6319,-1.83244,Wikidata P625,,0,1,0,0,1,,,Q17675401,,,E06000054,Wiltshire,England
+V0565,Rudge,51.42477,-1.59875,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Wiltshire,PastScape 224670,,,,E06000054,Wiltshire,England
+V0566,Sherston,51.57902,-2.20985,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Wiltshire,PastScape 867348,,,,E06000054,Wiltshire,England
+V0567,Stanton Park,51.51545,-2.1512,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Wiltshire,PastScape 208219,,,,E06000054,Wiltshire,England
+V0568,Tockenham,51.51634,-1.9454,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Wiltshire,PastScape 887838,Q17676839,,,E06000054,Wiltshire,England
+V0569,Truckle Hill,51.48357,-2.23634,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Wiltshire,PastScape 208315,Q17642821,https://pleiades.stoa.org/places/79619,node/2696871243,E06000054,Wiltshire,England
+V0570,Bramdean,51.04914,-1.10612,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Hampshire,PastScape 239199,Q15133968,,,E07000094,Winchester,England
+V0571,Hambledon,50.92452,-1.0846,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 239063,,,,E07000094,Winchester,England
+V0572,Itchen Abbas,51.10561,-1.24601,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Hampshire,PastScape 235842,Q17677414,https://pleiades.stoa.org/places/79537,node/597661620,E07000094,Winchester,England
+V0573,Kings Worthy,51.08865,-1.2978,Pleiades representative point,,0,1,0,1,2,,,Q139882326,https://pleiades.stoa.org/places/79546,,E07000094,Winchester,England
+V0574,Lippen Wood,51.01655,-1.10018,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Hampshire,PastScape 239364,Q17645586,https://pleiades.stoa.org/places/79754,,E07000094,Winchester,England
+V0575,Meonstoke,50.98561,-1.12301,"Wikipedia OS grid reference, square centre",10.0,1,0,0,1,2,Hampshire,PastScape 239419,,https://pleiades.stoa.org/places/79598,,E07000094,Winchester,England
+V0576,Micheldever Wood,51.14066,-1.24243,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 235570,,,,E07000094,Winchester,England
+V0577,Old Alresford,51.09719,-1.17031,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 235723,,,,E07000094,Winchester,England
+V0578,Roman villa N of Bighton Wood,51.1234,-1.11197,Wikidata P625,,0,1,0,0,1,,,Q17650000,,,E07000094,Winchester,England
+V0579,Roman villa in Bottom Copse,50.9366,-1.1125,Wikidata P625,,0,1,0,0,1,,,Q17649946,,,E07000094,Winchester,England
+V0580,Sparsholt,51.06896,-1.40916,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Hampshire,PastScape 231909,Q17650374;Q7573804,https://pleiades.stoa.org/places/79691,node/12700490542,E07000094,Winchester,England
+V0581,Twyford,51.01691,-1.31217,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Hampshire,PastScape 231220,Q17650252,https://pleiades.stoa.org/places/50794109,node/6899275921,E07000094,Winchester,England
+V0582,Upham,50.9991,-1.22579,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Hampshire,PastScape 235346,,,,E07000094,Winchester,England
+V0583,Cox Green,51.51041,-0.74955,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Berkshire,PastScape 247961,Q139832064,https://pleiades.stoa.org/places/79406,,E06000040,Windsor and Maidenhead,England
+V0584,Maidenhead,51.52201,-0.73208,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Berkshire,PastScape 248410,,,,E06000040,Windsor and Maidenhead,England
+V0585,Northbrook College,50.82365,-0.43185,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,West Sussex,PastScape 762877,,,,E07000229,Worthing,England
+V0586,Bays Meadow,52.27271,-2.15164,"Wikipedia OS grid reference, square centre",100.0,1,0,0,0,1,Worcestershire,PastScape 116308,,,,E07000238,Wychavon,England
+V0587,Hambleden,51.56334,-0.87044,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Buckinghamshire,PastScape 245181,Q17660804,https://pleiades.stoa.org/places/79500,,E07000007,Wycombe,England
+V0588,Hambleden,51.55693,-0.86714,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Buckinghamshire,PastScape 245271,Q17660549,https://pleiades.stoa.org/places/807201018,way/1353846600,E07000007,Wycombe,England
+V0589,High Wycombe,51.6236,-0.73879,"Wikipedia OS grid reference, square centre",10.0,1,1,0,1,3,Buckinghamshire,PastScape 248726,Q130369823,https://pleiades.stoa.org/places/79514,,E07000007,Wycombe,England
+V0590,Roman villa east of Lodge Hill Farm,51.6841,-0.84746,Wikidata P625,,0,1,0,0,1,,,Q17660402,,,E07000007,Wycombe,England
+V0591,Saunderton,51.71023,-0.84768,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Buckinghamshire,PastScape 342603,Q17673945,,,E07000007,Wycombe,England
+V0592,Saunderton,51.67608,-0.82566,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79673,,E07000007,Wycombe,England
+V0593,Dan-y-Graig,51.48924,-3.67195,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Glamorgan,Coflein 403307,Q122221403,,,W06000013,Bridgend,Wales
+V0594,Ely Race Course,51.4779,-3.2293,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Glamorgan,Coflein 301355,Q122218712,https://pleiades.stoa.org/places/79451,way/22821278,W06000015,Cardiff,Wales
+V0595,Abercyfor,51.8375,-4.27642,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79278,,W06000010,Carmarthenshire,Wales
+V0596,Cwmbrwyn,51.78056,-4.53284,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Carmarthenshire,Coflein 304181,Q122218775,,,W06000010,Carmarthenshire,Wales
+V0597,Llys Brychan,51.91252,-3.8842,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Carmarthenshire,Coflein 304634,Q122218926,,,W06000010,Carmarthenshire,Wales
+V0598,Abermagwr,52.34953,-3.95574,"Wikipedia OS grid reference, square centre",10.0,1,0,1,0,2,Cardiganshire,Coflein 405315,,,node/4082115196,W06000008,Ceredigion,Wales
+V0599,Ffrith,53.09057,-3.07069,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79463,,W06000005,Flintshire,Wales
+V0600,Castle Tump,51.61667,-2.75901,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Monmouthshire,Coflein 307961,Q122218870,,,W06000021,Monmouthshire,Wales
+V0601,Five Lanes,51.61522,-2.80145,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Monmouthshire,Coflein 405453,Q122221690,,,W06000021,Monmouthshire,Wales
+V0602,"Little Hadnock Roman Villa, Dixton Newtown",51.83388,-2.67579,Wikidata P625,,0,1,0,0,1,,,Q122219302,,,W06000021,Monmouthshire,Wales
+V0603,Portskewett Hill Roman Site,51.59458,-2.72635,Wikidata P625,,0,1,0,0,1,,,Q122218622,,,W06000021,Monmouthshire,Wales
+V0604,Wyndcliff Roman Site,51.6751,-2.6844,Wikidata P625,,0,1,0,0,1,,,Q122221693,,,W06000021,Monmouthshire,Wales
+V0605,Margam,51.56468,-3.72543,"Wikipedia OS grid reference, square centre",1000.0,1,0,0,0,1,West Glamorgan,,,,,W06000012,Neath Port Talbot,Wales
+V0606,Croes Carn Einion Roman Site,51.57088,-3.07299,Wikidata P625,,0,1,0,0,1,,,Q122221708,,,W06000022,Newport,Wales
+V0607,Ford Farm,51.60136,-2.89087,"Wikipedia OS grid reference, square centre",10.0,1,1,0,0,2,Monmouthshire,Coflein 310034,Q122221095,,,W06000022,Newport,Wales
+V0608,Castle Flemish,51.90394,-4.89816,Wikidata P625,,0,1,0,0,1,,,Q122217262,,,W06000009,Pembrokeshire,Wales
+V0609,Ford,51.899,-4.98159,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Pembrokeshire,Coflein 400270,,,,W06000009,Pembrokeshire,Wales
+V0610,Trelissey,51.73961,-4.64455,"Wikipedia OS grid reference, square centre",10.0,1,0,0,0,1,Pembrokeshire,Coflein 304230,,,,W06000009,Pembrokeshire,Wales
+V0611,Cold Knap Roman building,51.39045,-3.29608,Wikidata P625,,0,1,0,0,1,,,Q121890897,,,W06000014,Vale of Glamorgan,Wales
+V0612,Llandough,51.453,-3.19805,"Wikipedia OS grid reference, square centre",100.0,1,1,0,1,3,Glamorgan,Coflein 400051,Q139882744,https://pleiades.stoa.org/places/79570,,W06000014,Vale of Glamorgan,Wales
+V0613,Llantwit Major,51.41929,-3.49868,"Wikipedia OS grid reference, square centre",10.0,1,1,1,1,4,Glamorgan,Coflein 301356,Q107032315;Q6661817,https://pleiades.stoa.org/places/79571,node/2754940778,W06000014,Vale of Glamorgan,Wales
+V0614,Whitton,51.43956,-3.31751,Pleiades representative point,,0,0,0,1,1,,,,https://pleiades.stoa.org/places/79760,,W06000014,Vale of Glamorgan,Wales
+V0615,Whitton Lodge,51.43354,-3.3232,"Wikipedia OS grid reference, square centre",10.0,1,0,1,1,3,Glamorgan,Coflein 227673,,https://pleiades.stoa.org/places/291184550,node/9680864810,W06000014,Vale of Glamorgan,Wales
+V0616,Rossett,53.11963,-2.98015,"Wikipedia OS grid reference, square centre",1000.0,1,0,0,0,1,Denbighshire,,,,,W06000006,Wrexham,Wales
+V0617,Unnamed Roman Villa,53.08531,-2.88844,Pleiades representative point,,0,0,1,1,2,,,,https://pleiades.stoa.org/places/821460578,node/5587042923,W06000006,Wrexham,Wales

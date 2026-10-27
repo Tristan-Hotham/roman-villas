@@ -1,0 +1,35 @@
+{
+ "raw_records": {
+  "osm": 96,
+  "pleiades": 2349,
+  "wikidata": 364,
+  "wikipedia": 500
+ },
+ "wikipedia_without_grid": 1,
+ "outside_england_wales": {
+  "pleiades": 2093
+ },
+ "records_kept": {
+  "osm": 96,
+  "pleiades": 256,
+  "wikidata": 364,
+  "wikipedia": 499
+ },
+ "villas": 617,
+ "villas_by_country": {
+  "England": 592,
+  "Wales": 25
+ },
+ "villas_by_nsources": {
+  "1": 285,
+  "2": 138,
+  "3": 137,
+  "4": 57
+ },
+ "only_one_source": {
+  "wikipedia": 186,
+  "pleiades": 28,
+  "wikidata": 57,
+  "osm": 14
+ }
+}
