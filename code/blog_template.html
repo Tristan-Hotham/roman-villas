@@ -1,0 +1,165 @@
+<!-- wp:paragraph -->
+<p><em>Roman villas and today's richest neighbourhoods both crowd into the lowland south-east. I built an open list of {{villas.total|int}} villas and set it against household income in every neighbourhood of England and Wales, to see whether the villas mark the money or just the map.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://tristan-hotham.github.io/roman-villas/">Explore the interactive version</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://doi.org/10.5281/zenodo.23689960">Read the paper</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph -->
+<p>Drive west out of London towards the Berkshire Downs and the Cotswolds and you pass through prosperous commuter country. In Roman Britain the same countryside was dotted with villas: the farmhouses and country houses of the province's landed families, with their mosaics, bath suites and painted walls. Put a map of villas next to a map of income and the resemblance is hard to miss.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Recently I asked whether <a href="https://tristan-hotham.github.io/domesday-destiny/">Domesday Book still predicts the size of English places</a>. Here I go back further, to Roman Britain, with a sharper question. Are the neighbourhoods next to Roman villas richer today? And if they are, is that about the villas, or just about being in the lowland south-east?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Two maps that look alike</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_map.png|Map of England and Wales with {{villas.total|int}} Roman villas as red diamonds over dots for {{msoa.n|int}} neighbourhoods shaded by household income, darkest around London, with Roman roads in ochre|Red: Roman villas from Wikipedia, Wikidata, OpenStreetMap and Pleiades. Teal: mean household income by neighbourhood (MSOA), financial year ending 2023. Ochre: Roman roads from Itiner-e.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>The villas form a broad arc from Kent through Hampshire, Wiltshire and Somerset to the Cotswolds and the East Midlands. About {{villas.share_south_east_east_south_west_london|pct}} of them lie in the South East, East, South West and London. Today's money has a different shape: a dark core around London that fades with distance.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I call a neighbourhood a "villa neighbourhood" when a known villa lies within 2 km of its population-weighted centre. That is {{msoa.villa_2km|int}} of the {{msoa.n|int}} middle layer super output areas (MSOAs) of England and Wales. Their median household income is {{raw.median_with|gbp}}, against {{raw.median_without|gbp}} for the rest: {{raw.median_gap_pct|pct}} more. In the poorest tenth of neighbourhoods only {{raw.share_bottom_decile_with_villa|pct1}} have a villa nearby.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_deciles.png|Bar chart of the share of neighbourhoods with a villa within 2 km by income tenth, rising from {{raw.share_bottom_decile_with_villa|pct1}} in the poorest tenth to a peak in the ninth tenth, then falling back in the richest|Share of neighbourhoods with a Roman villa within 2 km, by income tenth. The dashed line is the average, {{msoa.share_villa_2km|pct1}}.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The villa belt is not the commuter belt</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Distance from London is the obvious suspect. Income falls steadily as you move away from Charing Cross, from a median of {{bands.0.median_income|gbp}} within 25 km to {{bands.7.median_income|gbp}} beyond 300 km. Villas follow a different curve. They are scarce in the inner ring, where London has built over most of what there was, peak at {{bands.3.villas_per_1000km2|f1}} per 1,000 km² between 75 and 100 km out, and then thin away to the north and west.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_bands.png|Two bar charts by distance ring from London: villa density peaks between 75 and 100 km, while median income falls steadily with distance|Left: known villas per 1,000 km² of land in each ring around Charing Cross. Right: median neighbourhood household income.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>So the two belts overlap, but they are not the same belt. Villa country is the outer edge of commuter country and the farmland beyond it.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Compare like with like and the premium vanishes</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>To separate the villas from the geography I fitted a series of regressions, adding controls one block at a time. With no controls, villa neighbourhoods have incomes about {{model.raw.premium|pct1}} higher. Comparing only within the same region cuts that to {{model.region.premium|pct1}}. Adding distance to London takes it to {{model.london.premium|pct1}}. Then distance to Roman roads and towns, height, hilliness, the coast and how urban the area is leave {{model.urban.premium|pct1}}, and comparing only within the same local authority leaves {{model.lad.premium|pct1}}. None of these is distinguishable from zero.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_ladder.png|Dot and whisker chart showing the villa premium falling from {{model.raw.premium|pct1}} with no controls to about zero once region and distance to London are included|The villa premium with 95% intervals as blocks of controls are added. Standard errors are clustered by local authority.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>It holds when I change the rules: a 5 km radius, only the villas listed on Wikipedia, income after housing costs, London left out, or the three southern regions alone. The fully controlled premium stays between {{sens_min|spct1}} and {{sens_max|spct1}}. Roman forts show the mirror image. They sit mostly in the north and Wales, so neighbourhoods near them look {{forts.raw|pctabs}} poorer at first, and that gap disappears too once the same controls go in.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:pullquote -->
+<figure class="wp-block-pullquote"><blockquote><p>A Roman villa nearby tells you which part of the country you are in. It does not tell you which street is rich.</p></blockquote></figure>
+<!-- /wp:pullquote -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Move the villas</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>My favourite test is the bluntest. I picked up every villa and dropped it 5 to 15 km away in a random direction, always on land, and measured the "villa premium" again for the fake sites. I did that {{placebo.runs|int}} times.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If the real sites marked something special about their exact spot, the fakes should do worse. They do not. The displaced villas show a median raw premium of {{placebo.raw_median|pct1}}, and {{placebo.raw_share_ge_real|pct}} of runs beat the real thing. Any spot within 15 km of a villa predicts income as well as the villa itself.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_placebo.png|Two histograms of the premium for {{placebo.runs|int}} sets of displaced fake villas, with the real villas marked by a red line near the low end of each|Grey: premiums for villas moved 5 to 15 km at random. Red: the real villas. Left without controls, right with all controls.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Districts, not streets</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Zoom out to the {{lad.n|int}} local authorities and there is a modest link: districts with more villas per 100 km² tend to be a little richer (a rank correlation of {{lad.spearman|f2}}, and {{lad.partial3_spearman|f2}} after allowing for distance to London, population density and region). That fits the rest. Districts are big enough to capture broad differences in land and history; within a district, living next to the villa itself buys nothing.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The most villa-dense districts are a mixed bunch. Cotswold has the most villas, {{lad.most_villas.villas|int}}, and ranks {{lad.top_density.5.income_rank|int}} of {{lad.n|int}} for income. South Somerset ({{lad.top_density.6.income_rank|int}}) and the Isle of Wight ({{lad.top_density.13.income_rank|int}}) are villa-rich but sit in the lower half. And {{lad.no_villa_share|pct}} of authorities have no recorded villa at all, including Richmond upon Thames, the richest of them.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"sizeSlug":"full"} -->
+<figure class="wp-block-image size-full">{{IMG|b_lad.png|Scatter plot of local authorities, villa density against mean household income, with a loose upward drift and many villa-free authorities stacked at zero|Each dot is a local authority. Red: one or more recorded villas. Teal: none.}}</figure>
+<!-- /wp:image -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How I did this</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>I could not find a single open, downloadable list of Roman villas for England and Wales, so I built one. Wikipedia's lists of villas in England and Wales give {{villas.wikipedia_rows|int}} rows with Ordnance Survey grid references, which I converted to coordinates. I added Roman villa items from Wikidata, archaeological sites named as villas in OpenStreetMap, and the villas in the Pleiades gazetteer, then joined records that lie close together or share a name. That leaves {{villas.total|int}} villas, {{villas.multi_source|int}} of them confirmed by two or more sources.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Be clear about what that list is. It holds excavated and well recorded villas that have reached open sources, not every villa that existed. Recording is richer in the south and in well studied, heavily developed counties, which is one more reason not to trust the raw gap. Income is the ONS modelled estimate of mean household income for each MSOA in the financial year ending 2023. I had no open soil data, so height and hilliness stand in for land quality. Everything here is correlation, not causation.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://tristan-hotham.github.io/roman-villas/">Explore the interactive version</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://doi.org/10.5281/zenodo.23689960">Read the paper</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://github.com/Tristan-Hotham/roman-villas">Data and code</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Notes and sources</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Villas: Wikipedia, <a href="https://en.wikipedia.org/wiki/List_of_Roman_villas_in_England">List of Roman villas in England</a> and <a href="https://en.wikipedia.org/wiki/List_of_Roman_villas_in_Wales">List of Roman villas in Wales</a> (CC BY-SA 4.0); <a href="https://www.wikidata.org/">Wikidata</a> (CC0); <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a> (ODbL); <a href="https://pleiades.stoa.org/">Pleiades</a> (CC BY 3.0).</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Income: Office for National Statistics, Income estimates for small areas, England and Wales, financial year ending 2023. Census 2021, MSOA centroids and Built-up Areas: ONS. Open Government Licence v3.0.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Roman roads: <a href="https://itiner-e.org/">Itiner-e</a>. Elevation: <a href="https://registry.opendata.aws/terrain-tiles/">AWS Terrain Tiles</a>.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Companion study: <a href="https://tristan-hotham.github.io/domesday-destiny/">Is Domesday Destiny?</a></li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Paper, data and code: <a href="https://doi.org/10.5281/zenodo.23689960">Zenodo</a> and <a href="https://github.com/Tristan-Hotham/roman-villas">GitHub</a>.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->

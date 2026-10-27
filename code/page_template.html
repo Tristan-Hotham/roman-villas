@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Roman Commuter Belt?</title>
+<meta name="description" content="Do Roman villas cluster in the same places as today's richest neighbourhoods? {{villas.total|int}} villas in England and Wales set against household income for {{msoa.n|int}} neighbourhoods.">
+<meta property="og:title" content="The Roman Commuter Belt?">
+<meta property="og:description" content="{{villas.total|int}} Roman villas against today's household incomes. Villa neighbourhoods look richer, until you account for where they are.">
+<meta property="og:image" content="https://tristan-hotham.github.io/roman-villas/header.png">
+<meta property="og:url" content="https://tristan-hotham.github.io/roman-villas/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+/* Mosaic cream. Roman red = villas. Ochre = Roman towns and roads. Teal tesserae = today's income. */
+:root{
+  --bg:#F6EEDF; --panel:#EEE2CC; --fg:#2B1B12; --muted:#76604F; --rule:#DFCFB4; --card:#FCF7EE; --border:#CDB998;
+  --hot:#A8321E; --ochre:#B97A1C; --terra:#C9663F; --teal:#2C6E6B;
+  --q1:#E4EDE6; --q2:#B5D3CB; --q3:#7FB0A9; --q4:#43827F; --q5:#1C4F55;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1B1411; --panel:#261C17; --fg:#F1E6D6; --muted:#B39E89; --rule:#3B2E26; --card:#241A15; --border:#54443A;
+  --hot:#E8573A; --ochre:#E0A443; --terra:#E0855E; --teal:#6FB7AE;
+  --q1:#24332F; --q2:#2E5450; --q3:#3F7D76; --q4:#64ABA2; --q5:#A5DCD2; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1B1411; --panel:#261C17; --fg:#F1E6D6; --muted:#B39E89; --rule:#3B2E26; --card:#241A15; --border:#54443A;
+  --hot:#E8573A; --ochre:#E0A443; --terra:#E0855E; --teal:#6FB7AE;
+  --q1:#24332F; --q2:#2E5450; --q3:#3F7D76; --q4:#64ABA2; --q5:#A5DCD2; color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 18px/1.62 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden}
+.wrap{max-width:680px;margin:0 auto;padding-block:28px 64px}
+.wrap .bleed{width:min(1080px,calc(100vw - 32px));margin-left:calc((100% - min(1080px,100vw - 32px))/2);margin-right:0}
+a{color:inherit;text-decoration-color:var(--hot);text-underline-offset:3px}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.kicker b{background:var(--hot);color:#fff;padding:5px 8px;font-weight:500}
+header.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 24px;align-items:end;padding-bottom:22px;margin-top:18px}
+.tiles{height:14px;margin:0 0 6px;background:
+  linear-gradient(90deg,var(--hot) 0 25%,var(--bg) 25% 33.3%,var(--ochre) 33.3% 58.3%,var(--bg) 58.3% 66.6%,var(--fg) 66.6% 91.6%,var(--bg) 91.6%) 0 0/36px 6px repeat-x,
+  linear-gradient(90deg,var(--fg) 0 25%,var(--bg) 25% 33.3%,var(--hot) 33.3% 58.3%,var(--bg) 58.3% 66.6%,var(--ochre) 66.6% 91.6%,var(--bg) 91.6%) 18px 8px/36px 6px repeat-x}
+h1{font:900 clamp(50px,12.5vw,108px)/.88 var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance;font-variation-settings:"SOFT" 50}
+h1 em{font-style:normal;color:var(--hot)}
+.mark{width:clamp(84px,19vw,160px);height:auto;display:block}
+.dek{grid-column:1/-1;font-size:21px;line-height:1.42;margin:8px 0 0;max-width:46ch}
+.byline{font:400 13px/1.4 var(--mono);color:var(--muted);margin-top:14px}
+h2{font:800 34px/1.04 var(--display);letter-spacing:-.01em;margin:52px 0 10px;text-wrap:balance}
+h2 .n{font:500 13px/1 var(--mono);color:var(--hot);display:block;letter-spacing:.1em;margin-bottom:10px}
+h3{font:600 20px/1.25 var(--display);margin:28px 0 6px}
+p{margin:0 0 16px}
+.lede::first-letter{font:900 72px/.8 var(--display);float:left;margin:6px 10px 0 0;color:var(--hot)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:26px 0 8px}
+.stats div{background:var(--card);padding:14px 12px}
+.stats b{display:block;font:900 clamp(28px,6vw,40px)/1 var(--display);color:var(--fg)}
+.stats b.h{color:var(--hot)}
+.stats span{font:400 12px/1.35 var(--mono);color:var(--muted);display:block;margin-top:6px}
+@media (max-width:600px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.figure{margin:26px 0 30px}
+.fig-h{font:600 19px/1.25 var(--display);margin:0 0 4px}
+.fig-sub{font:400 13px/1.45 var(--mono);color:var(--muted);margin:0 0 12px}
+.src{font:400 12px/1.45 var(--mono);color:var(--muted);margin-top:10px}
+.chart{width:100%;position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--mono);fill:var(--fg)}
+.lab{font-size:12px}.halo{paint-order:stroke;stroke:var(--bg);stroke-width:4px;stroke-linejoin:round}.lab.m{fill:var(--muted)}.lab.b{font-weight:500}.lab.s{font-size:11px}
+.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);font:400 12px/1.45 var(--mono);padding:8px 10px;border-radius:3px;max-width:270px;z-index:1000;transform:translate(-50%,calc(-100% - 12px));display:none}
+.tip b{font-weight:500}
+.controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 10px}
+.btn{font:500 12px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:8px 10px;cursor:pointer;min-height:36px}
+.btn[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn:focus-visible,input:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.searchbox{position:relative;flex:1 1 200px;min-width:0}
+input[type=search]{font:400 14px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:9px 10px;min-height:36px;width:100%}
+.suggest{position:absolute;left:0;right:0;top:100%;margin:2px 0 0;padding:0;list-style:none;background:var(--card);border:1px solid var(--border);z-index:1001;font:400 13px/1.3 var(--mono);display:none;max-height:300px;overflow:auto}
+.suggest li{padding:8px 10px;cursor:pointer;border-bottom:1px solid var(--rule)}
+.suggest li span{color:var(--muted)}
+.suggest li[aria-selected="true"],.suggest li:hover{background:var(--panel)}
+#lmap{height:660px;border:1px solid var(--border);background:var(--panel);border-radius:2px}
+@media (max-width:600px){#lmap{height:500px}}
+.leaflet-container{font:400 12px/1.4 var(--mono);background:var(--panel)}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--card);color:var(--fg);border-radius:3px;box-shadow:0 2px 10px rgba(0,0,0,.25)}
+.leaflet-popup-content{margin:12px 14px;font:400 12.5px/1.45 var(--mono);min-width:210px}
+.leaflet-container a.leaflet-popup-close-button{color:var(--muted)}
+.leaflet-bar a,.leaflet-bar a:hover{background:var(--card);color:var(--fg);border-bottom-color:var(--border)}
+.leaflet-control-attribution{background:color-mix(in srgb,var(--card) 85%,transparent)!important;color:var(--muted)}
+.leaflet-control-attribution a{color:var(--fg)}
+.dark-tiles .leaflet-tile-pane{filter:invert(1) hue-rotate(180deg) brightness(.85) contrast(.9) sepia(.2)}
+.pop b.t{font:600 17px/1.2 var(--display);display:block;margin-bottom:2px}
+.pop .c{color:var(--muted);margin-bottom:6px}
+.pop dl{display:grid;grid-template-columns:auto 1fr;gap:1px 10px;margin:4px 0 6px}
+.pop dt{color:var(--muted)}.pop dd{margin:0}
+.pop .sec{font-weight:500;margin-top:8px;border-top:1px solid var(--rule);padding-top:6px}
+.pop .note{font-size:11.5px;color:var(--muted);margin:4px 0}
+.legend{display:flex;gap:6px 14px;flex-wrap:wrap;font:400 12px/1.3 var(--mono);color:var(--muted);margin-top:8px;align-items:center}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.legend i.sq{border-radius:1px;transform:rotate(45deg)}
+.pull{font:600 26px/1.25 var(--display);border-left:6px solid var(--hot);padding:4px 0 4px 18px;margin:30px 0}
+.note{background:var(--panel);border:1px solid var(--rule);padding:14px 16px;font-size:16px;margin:22px 0}
+.note h3{margin-top:0}
+table.t{width:100%;border-collapse:collapse;font:400 13px/1.35 var(--mono)}
+table.t th{text-align:left;font-weight:500;color:var(--muted);border-bottom:2px solid var(--fg);padding:6px 8px 6px 0}
+table.t td{border-bottom:1px solid var(--rule);padding:7px 8px 7px 0;vertical-align:top}
+table.t td.num,table.t th.num{text-align:right;white-space:nowrap}
+table.t td small{color:var(--muted);display:block}
+table.t td.neg{color:var(--hot)}
+.tablewrap{overflow-x:auto}
+@media (max-width:600px){table.t .wide{display:none}}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0}
+@media (max-width:600px){.cards{grid-template-columns:1fr}}
+.card{background:var(--card);border:1px solid var(--border);border-left:4px solid var(--hot);padding:12px 14px;font:400 13px/1.5 var(--mono)}
+.card b{font:600 19px/1.2 var(--display);display:block;margin-bottom:2px}
+.card .big{font:900 28px/1.05 var(--display);margin:6px 0 2px}
+.card .big span{color:var(--muted);font:400 13px/1 var(--mono)}
+.bar{height:8px;background:var(--rule);margin-top:6px;position:relative}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--teal)}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.cta a{font:500 13px/1 var(--mono);text-decoration:none;border:1px solid var(--fg);padding:11px 14px;border-radius:3px}
+.cta a.p{background:var(--hot);border-color:var(--hot);color:#fff}
+footer{margin-top:56px;padding-top:16px;font:400 13px/1.55 var(--mono);color:var(--muted)}
+footer p{margin:0 0 10px}
+.theme{position:fixed;right:12px;bottom:12px;z-index:1002}
+@media print{.theme,.controls{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="kicker"><b>Data study</b><span>History × data</span><span>England and Wales, Roman Britain and 2023</span></div>
+<header class="hero">
+  <h1>The Roman <em>commuter belt</em>?</h1>
+  <svg class="mark" viewBox="-100 -100 200 200" aria-hidden="true"><g id="heroMark"></g></svg>
+  <p class="dek">Roman villas cluster in the same corner of Britain as today's richest neighbourhoods. I built the best open list of villas I could and set it against household income, to see whether the villas mark the money or just the map.</p>
+</header>
+<div class="tiles" aria-hidden="true"></div>
+<div class="byline">Dr Tristan Hotham, Independent researcher · October 2026 · Data: Wikipedia, Wikidata, OpenStreetMap, Pleiades, ONS · <a href="https://doi.org/10.5281/zenodo.23689960">doi:10.5281/zenodo.23689960</a></div>
+
+<div class="stats">
+  <div><b>{{villas.total|int}}</b><span>Roman villas located in England and Wales, from four open sources</span></div>
+  <div><b class="h">{{raw.median_gap_pct|spct0}}</b><span>higher median household income where a villa lies within 2 km</span></div>
+  <div><b>{{headline.full_premium|spct1}}</b><span>the same "villa premium" once region, distance to London and landscape are allowed for</span></div>
+  <div><b class="h">{{placebo.raw_share_ge_real|pct}}</b><span>of runs with every villa moved 5 to 15 km at random show as big a raw premium</span></div>
+</div>
+
+<p class="lede">Drive west out of London along the M4, or north-west towards the Chilterns, and you pass through prosperous commuter country: the Thames Valley, the Berkshire Downs, and on to the Cotswolds. In Roman Britain the same country was dotted with villas, the farmhouses and country houses of Roman Britain's landed families, with their mosaics, bath suites and painted walls.</p>
+<p>It is tempting to see a line running from one to the other: good land, close to a capital, chosen by the wealthy then and now. In <a href="https://tristan-hotham.github.io/domesday-destiny/">Is Domesday Destiny?</a> I asked whether the England of 1086 still shapes England today. Here I go back further, to Roman Britain, and ask a sharper question. Are the neighbourhoods next to Roman villas richer than others, and if so, is that about the villas, or just about lowland south-east England?</p>
+<p>The short answer: the villa belt and the commuter belt do overlap, and a neighbourhood with a villa nearby is, on the face of it, richer. But nearly all of that gap is geography. Compare like with like, region with region and distance from London with distance from London, and the villa premium shrinks to almost nothing.</p>
+
+<h2><span class="n">01 · The map</span>Villa country and money country</h2>
+<p>Each red dot below is a Roman villa from my combined list. The small teal dots are the {{msoa.n|int}} neighbourhoods (middle layer super output areas, or MSOAs) of England and Wales, shaded by mean household income in the financial year ending 2023: the darker, the richer. You can add the Roman towns and the Roman road network as well, search for a villa, or tap anything for details.</p>
+<div class="figure bleed">
+  <div class="controls">
+    <button class="btn" data-layer="income" aria-pressed="true">Income today</button>
+    <button class="btn" data-layer="villas" aria-pressed="true">Villas</button>
+    <button class="btn" data-layer="towns" aria-pressed="false">Roman towns</button>
+    <button class="btn" data-layer="roads" aria-pressed="false">Roman roads</button>
+    <div class="searchbox">
+      <input type="search" id="q" placeholder="Find a villa, e.g. Chedworth" aria-label="Find a Roman villa" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="sug">
+      <ul class="suggest" id="sug" role="listbox"></ul>
+    </div>
+  </div>
+  <div id="lmap" role="region" aria-label="Map of {{villas.total|int}} Roman villas over mean household income for {{msoa.n|int}} neighbourhoods in England and Wales"></div>
+  <div class="legend" id="legend"></div>
+  <div class="src">Income: ONS small area income estimates, mean total annual household income, FYE2023, one dot per MSOA at its population-weighted centre, in five equal-sized groups. Villas: Wikipedia, Wikidata, OpenStreetMap and Pleiades, combined and deduplicated. Roman towns: Pleiades. Roads: Itiner-e. Click the map to let the scroll wheel zoom it.</div>
+</div>
+<p>The pattern jumps out. Villas are thickest in a broad arc from Kent through Hampshire, Wiltshire and Somerset to the Cotswolds and the East Midlands. About {{villas.share_south_east_east_south_west_london|pct}} of them fall in the South East, East, South West and London regions. North and west of a line from the Severn to the Humber they almost vanish, except in south Wales and east Yorkshire. Today's money has its own shape: a dark core in and around London, fading with distance.</p>
+
+<h2><span class="n">02 · The raw gap</span>Villa neighbourhoods look richer</h2>
+<p>I call a neighbourhood a "villa MSOA" when a known villa lies within 2 km of its population-weighted centre. That is {{msoa.villa_2km|int}} of the {{msoa.n|int}} MSOAs, or {{msoa.share_villa_2km|pct1}}.</p>
+<p>Their median household income is {{raw.median_with|gbp}}, against {{raw.median_without|gbp}} for the rest: a gap of {{raw.median_gap|gbp}}, or {{raw.median_gap_pct|pct}}. In the richest tenth of neighbourhoods, {{raw.share_top_decile_with_villa|pct1}} have a villa nearby; in the poorest tenth, only {{raw.share_bottom_decile_with_villa|pct1}}.</p>
+<div class="figure">
+  <div class="fig-h">Share of neighbourhoods with a Roman villa within 2 km, by income tenth</div>
+  <div class="fig-sub">MSOAs in England and Wales ranked by mean household income (FYE2023) and split into ten equal groups</div>
+  <div class="chart" id="cDec"></div>
+</div>
+<p>So far, so commuter belt. But a villa MSOA is not a random neighbourhood. It is far more likely to be in the south, in the countryside, near a Roman road, and within reach of London. All of those things also go with higher incomes today. The question is what is left once they are taken into account.</p>
+
+<h2><span class="n">03 · Two belts</span>The villa belt sits beyond the commuter belt</h2>
+<p>Distance from London is the obvious suspect. The chart below cuts England and Wales into rings around Charing Cross. Income falls steadily with distance: the median neighbourhood within 25 km has a household income of {{bands.0.median_income|gbp}}, and beyond 300 km it is {{bands.7.median_income|gbp}}. Villas do not follow the same curve. They are scarce in the inner ring, where London has built over most of what there was, peak at {{bands.3.villas_per_1000km2|f1}} per 1,000 km² between 75 and 100 km out, and then thin away to the north and west.</p>
+<div class="figure">
+  <div class="fig-h">Villa density and income by distance from London</div>
+  <div class="fig-sub">Red: known Roman villas per 1,000 km² of land in each ring. Teal: median MSOA household income in each ring</div>
+  <div class="chart" id="cBands"></div>
+</div>
+<p>The villa belt, in other words, is the outer edge of today's commuter belt and the farmland beyond it: the downs and vales of Hampshire, Wiltshire, Oxfordshire and Gloucestershire. Both belts lean towards the lowland south-east; they are not the same belt.</p>
+
+<h2><span class="n">04 · Like with like</span>The villa premium, before and after controls</h2>
+<p>To separate villas from geography I fitted a series of regressions of (log) household income on the villa dummy, adding controls one block at a time. With no controls, villa MSOAs have incomes about {{model.raw.premium|pct1}} higher. Comparing only within the same region cuts that to {{model.region.premium|pct1}}. Adding distance to London takes it to {{model.london.premium|pct1}}.</p>
+<p>The further controls barely move it: distance to the nearest Roman road and Roman town, height above sea level, how hilly the ground is, and distance to the coast leave {{model.geo.premium|pct1}}; allowing for how urban the neighbourhood is leaves {{model.urban.premium|pct1}} (95% interval {{model.urban.lo|spct1}} to {{model.urban.hi|spct1}}). Comparing only neighbourhoods within the same local authority gives {{model.lad.premium|pct1}}. None of these is distinguishable from zero.</p>
+<div class="figure">
+  <div class="fig-h">How the villa premium shrinks as controls are added</div>
+  <div class="fig-sub">Percentage difference in mean household income for MSOAs with a villa within 2 km, with 95% intervals (standard errors clustered by local authority)</div>
+  <div class="chart" id="cLadder"></div>
+</div>
+<p class="pull">A Roman villa nearby tells you which part of the country you are in. It does not tell you which street is rich.</p>
+<p>The result holds when I change the definitions. Using a 5 km radius, only the villas listed on Wikipedia, income after housing costs, leaving London out, or looking only at the South East, East and South West, the fully controlled premium stays between {{sens_min|spct1}} and {{sens_max|spct1}}.</p>
+<div class="tablewrap"><table class="t" id="tSens"><thead><tr><th>Version</th><th class="num">No controls</th><th class="num">All controls</th><th class="num wide">95% interval</th></tr></thead><tbody></tbody></table></div>
+<p>Roman forts make a useful mirror image. They sit mostly in the north and in Wales, so the {{forts.msoas|int}} MSOAs with a Pleiades fort within 2 km look poorer at first: {{forts.raw|spct1}}. With the same controls that gap also all but disappears, to {{forts.full|spct1}}. Roman sites of either kind mostly tell you where in Britain you are.</p>
+
+
+<h2><span class="n">05 · Move the villas</span>A placebo test</h2>
+<p>Here is a blunter test. I picked up every villa and dropped it 5 to 15 km away in a random direction (always on land), then measured the "villa premium" again for these fake villas. I did this {{placebo.runs|int}} times.</p>
+<p>If the real sites marked something special about their exact spot, the fake ones should do worse. They do not. The fake villas show a median raw premium of {{placebo.raw_median|pct1}}, and {{placebo.raw_share_ge_real|pct}} of runs beat the real villas. With all controls in place, the fake villas average {{placebo.full_median|pct1}}, and {{placebo.full_share_ge_real|pct}} of runs match or beat the real ones' {{model.urban.premium|pct1}}.</p>
+<div class="figure">
+  <div class="fig-h">Real villas against {{placebo.runs|int}} sets of displaced fake villas</div>
+  <div class="fig-sub">Grey bars: the premium for fake villas moved 5 to 15 km. Red line: the real villas</div>
+  <div class="chart" id="cPlacebo"></div>
+</div>
+<p>The real premium is just what you get from being in roughly the right part of England. Any spot within 15 km of a villa would do as well.</p>
+
+<h2><span class="n">06 · Region by region</span>Rich in the South West, poorer in the South East</h2>
+<p>Within regions the gap goes both ways. In the South West, villa neighbourhoods have a median income {{reg_sw|pct}} above the rest. That is mostly about where in the region they are: only {{sw_villas_devon_cornwall|int}} of its {{sw_villas|int}} villas lie in Devon and Cornwall, where incomes are lower, and most sit in the east of the region, around Bath, Bristol, the Cotswolds and Somerset.</p>
+<p>In the South East the sign flips: villa MSOAs are {{reg_se_abs|pct}} poorer than the rest. They lie a little further from London (a median of {{se_dlon_villa|int}} km from Charing Cross, against {{se_dlon_novilla|int}} km for the rest), and they include less well-off places along the Hampshire and Sussex coast such as Havant, while the region's richest neighbourhoods are the commuter suburbs closer in.</p>
+<div class="tablewrap"><table class="t" id="tReg"><thead><tr><th>Region</th><th class="num">Villas</th><th class="num">Villa MSOAs</th><th class="num">Median with villa</th><th class="num">Median without</th><th class="num">Gap</th></tr></thead><tbody></tbody></table></div>
+<div class="src">Gap shown where a region has at least 10 villa MSOAs. Income: mean total annual household income, FYE2023.</div>
+
+<h2><span class="n">07 · Local authorities</span>Villa density against income</h2>
+<p>Zooming out to the {{lad.n|int}} local authorities of England and Wales, there is a modest positive link between villas per 100 km² and income: a rank correlation of {{lad.spearman|f2}}. It survives allowing for distance to London and population density ({{lad.partial2_spearman|f2}}) and, more weakly, region as well ({{lad.partial3_spearman|f2}}). So at the scale of whole districts, villa country does lean a little richer, even after the obvious controls.</p>
+<p>That fits the neighbourhood results rather than contradicting them. Districts are big enough to capture broad differences in land and history; the neighbourhood test shows that within a district, being next to the villa itself buys nothing. And {{lad.no_villa_share|pct}} of authorities have no recorded villa at all, including most of London's richest boroughs: Richmond upon Thames, Kingston, Wandsworth and Kensington and Chelsea all score zero.</p>
+<div class="figure">
+  <div class="fig-h">Villa density and household income by local authority</div>
+  <div class="fig-sub">Each dot is a local authority. Villas per 100 km² (square-root scale) against population-weighted mean MSOA household income. Tap a dot for its name</div>
+  <div class="chart" id="cLad"></div>
+</div>
+<h3>The most villa-dense authorities</h3>
+<p>Among authorities with at least three villas, the densest are below, with their income rank out of {{lad.n|int}} (1 is richest). Their median income rank is {{lad.top15_median_income_rank|int}}: middling, not top.</p>
+<div class="tablewrap"><table class="t" id="tLad"><thead><tr><th>Local authority</th><th class="num">Villas</th><th class="num">Per 100 km²</th><th class="num">Mean income</th><th class="num">Income rank</th></tr></thead><tbody></tbody></table></div>
+
+<h2><span class="n">08 · Famous villas</span>Where the famous villas sit now</h2>
+<p>The great show villas of Roman Britain mostly sit in comfortable, but not exceptional, neighbourhoods. The typical one is richer than {{famous_median_pct|pct}} of MSOAs. The exception at the top is Crofton in Orpington, in the London Borough of Bromley; the exception at the bottom is Brading on the Isle of Wight.</p>
+<div class="cards" id="famous"></div>
+<div class="src">Income of the MSOA whose population-weighted centre is nearest the villa. "Richer than" = share of all {{msoa.n|int}} MSOAs with lower mean household income.</div>
+
+<h2><span class="n">09 · The list</span>Building an open list of villas</h2>
+<p>I could not find a single open, downloadable list of Roman villas for England and Wales, so I built one from four sources and joined them:</p>
+<ul>
+<li><b>Wikipedia</b>: the lists of Roman villas in England and in Wales give {{villas.wikipedia_rows|int}} rows with names, counties and Ordnance Survey grid references, described as villas "confirmed by archaeology". I converted every grid reference to latitude and longitude (the one row without a grid reference was dropped).</li>
+<li><b>Wikidata</b>: {{villas.raw_records.wikidata|int}} items of class "Roman villa" (or "villa" with Roman in the name) in England and Wales, many of them scheduled monuments.</li>
+<li><b>OpenStreetMap</b>: {{villas.raw_records.osm|int}} archaeological sites named as villas.</li>
+<li><b>Pleiades</b>: the gazetteer of ancient places, {{villas.records_kept.pleiades|int}} features of type "villa" inside England and Wales.</li>
+</ul>
+<p>Records from different sources were treated as the same villa when they were within 600 m (1 km where Wikipedia gives only a 1 km grid square), or within 2.5 km when one name contains the other, closest pairs first, and never joining two villas from the same source. That leaves {{villas.total|int}} villas: {{villas.england|int}} in England and {{villas.wales|int}} in Wales. {{villas.multi_source|int}} are confirmed by two or more sources and {{villas.by_nsources.4|int}} by all four.</p>
+<div class="note">
+<h3>What this list is, and is not</h3>
+<p>These are excavated or well recorded villas that have made it into open sources, not all the villas that existed or even all that archaeologists know about. Local historic environment records hold many more possible villa sites, and aerial photography and developer-funded excavation keep adding to them. Recording is uneven: it is richer in the south, in counties with strong local archaeology societies, and where gravel quarrying and house building have prompted digs. That bias runs towards exactly the prosperous, growing south-east this study is about, which is one more reason to treat any raw "villa premium" with suspicion.</p>
+</div>
+
+<h2><span class="n">10 · Method</span>How I did this, and what to watch</h2>
+<ul>
+<li><b>Neighbourhoods.</b> The {{msoa.n|int}} MSOAs (2021 boundaries) of England and Wales, each represented by its ONS population-weighted centroid. "Villa within 2 km" is measured from that point, so in large rural MSOAs a villa elsewhere in the area may be missed, and the 5 km version is a useful check.</li>
+<li><b>Income.</b> ONS small area income estimates for the financial year ending 2023: modelled mean total annual household income, with wide confidence intervals for single MSOAs. Income after housing costs is used as a check. Scotland and Northern Ireland have no equivalent estimates, so they are left out.</li>
+<li><b>Controls.</b> Region; log distance from Charing Cross and its square; distance to the nearest Roman road (Itiner-e, all road types) and nearest Roman town ({{msoa.n_towns|int}} Pleiades settlements of the Roman period); elevation and local relief (the spread of heights within 1 km) from Terrain Tiles; distance to the coast; and the 2021 population of the Built-up Area each MSOA belongs to, with a flag for MSOAs outside any Built-up Area. I had no open soil map on disk, so height and relief stand in for land quality: a real gap.</li>
+<li><b>Models.</b> Ordinary least squares on log income, standard errors clustered by local authority. The premium is the exponent of the villa coefficient minus one. The last model swaps region for local authority fixed effects.</li>
+<li><b>Local authorities.</b> 2025 boundaries; villas per 100 km² of land; income is the population-weighted mean of MSOA incomes. Partial correlations are of ranks after removing log distance to London, log population density and, in the last version, region.</li>
+<li><b>Correlation, not causation.</b> Nothing here says villas made places rich, or that the rich of today chose land because the Romans did. The test is only whether villa locations add anything to the plain geography of income. They do not.</li>
+</ul>
+
+<div class="cta">
+  <a class="p" href="https://github.com/Tristan-Hotham/roman-villas">Data and code</a>
+  <a href="https://doi.org/10.5281/zenodo.23689960">Read the paper</a>
+  <a href="https://blog.tristanhotham.com/2026/10/27/roman-villas/">Blog post</a>
+  <a href="https://tristan-hotham.github.io/domesday-destiny/">Companion: Is Domesday Destiny?</a>
+  <a href="https://blog.tristanhotham.com/">More history data</a>
+</div>
+
+<h2><span class="n">11 · Sources</span>Sources and licences</h2>
+<ul class="src" style="font-size:13px;padding-left:18px">
+<li>Villa lists: English Wikipedia, <a href="https://en.wikipedia.org/wiki/List_of_Roman_villas_in_England">List of Roman villas in England</a> and <a href="https://en.wikipedia.org/wiki/List_of_Roman_villas_in_Wales">List of Roman villas in Wales</a>, retrieved 27 October 2026, CC BY-SA 4.0.</li>
+<li><a href="https://www.wikidata.org/">Wikidata</a>, Roman villa items, retrieved 27 October 2026 via QLever, CC0.</li>
+<li>© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>, historic=archaeological_site features, ODbL.</li>
+<li><a href="https://pleiades.stoa.org/">Pleiades</a> gazetteer of ancient places, villas and Roman settlements, CC BY 3.0.</li>
+<li>Roman roads: <a href="https://itiner-e.org/">Itiner-e</a>, the digital atlas of ancient roads (via my <a href="https://tristan-hotham.github.io/how-roman-is-your-road/">How Roman Is Your Road?</a> project).</li>
+<li>Income: Office for National Statistics, Income estimates for small areas, England and Wales, financial year ending 2023. Population, MSOA centroids, Built-up Areas and lookups: ONS Census 2021 and Open Geography portal. Source: Office for National Statistics licensed under the Open Government Licence v3.0. Contains OS data © Crown copyright and database right 2026.</li>
+<li>Elevation: <a href="https://registry.opendata.aws/terrain-tiles/">AWS Terrain Tiles</a> by Mapzen/Tilezen (SRTM, GMTED2010, ETOPO1 and national datasets). Coastline: Natural Earth (public domain).</li>
+<li>Base map tiles © Esri, HERE, Garmin, © OpenStreetMap contributors, and the GIS user community. Map library: Leaflet.</li>
+</ul>
+
+<footer>
+  <div class="tiles" aria-hidden="true"></div>
+  <p>Dr Tristan Hotham, researcher on social media, campaigns and politics. Independent researcher. Cite as: Hotham, T. (2026) The Roman Commuter Belt? Roman villas and household income in England and Wales. <a href="https://doi.org/10.5281/zenodo.23689960">https://doi.org/10.5281/zenodo.23689960</a></p>
+  <p>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</p>
+  <p>Because the villa list draws on Wikipedia (CC BY-SA 4.0), the derived data and the text of this page are released under CC BY-SA 4.0; records and coordinates taken from OpenStreetMap remain under the ODbL. The code is released under the MIT licence. <a href="https://blog.tristanhotham.com/">blog.tristanhotham.com</a></p>
+</footer>
+</div>
+<div class="tip" id="tip"></div>
+<button class="btn theme" id="theme" aria-label="Toggle dark mode">◐</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const D = /*SITE*/;
+const R = /*RESULTS*/;
+const NS = "http://www.w3.org/2000/svg";
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const el = (t, a = {}, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+const fmt = n => n == null ? "n/a" : Math.round(n).toLocaleString("en-GB");
+const gbp = n => "£" + fmt(n);
+const pc = (x, d = 0) => (x * 100).toFixed(d) + "%";
+const spc = (x, d = 1) => (x > 0 ? "+" : x < 0 ? "−" : "") + Math.abs(x * 100).toFixed(d) + "%";
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const tip = document.getElementById("tip");
+function showTip(h, x, y) { tip.innerHTML = h; tip.style.display = "block"; const w = tip.offsetWidth; x = Math.max(w / 2 + 8, Math.min(innerWidth - w / 2 - 8, x)); tip.style.left = x + scrollX + "px"; tip.style.top = y + scrollY + "px"; }
+function hideTip() { tip.style.display = "none"; }
+function hover(node, h) { node.style.cursor = "pointer"; node.setAttribute("tabindex", "0"); const s = () => { const r = node.getBoundingClientRect(); showTip(h, r.left + r.width / 2, r.top); }; node.addEventListener("pointerenter", s); node.addEventListener("pointerleave", hideTip); node.addEventListener("focus", s); node.addEventListener("blur", hideTip); node.addEventListener("click", e => { s(); e.stopPropagation(); }); }
+document.addEventListener("click", hideTip);
+const redraws = [];
+function resp(box, render) { let last = 0; const go = (force) => { const w = Math.max(280, Math.round(box.clientWidth)); if (!force && Math.abs(w - last) < 4) return; last = w; box.innerHTML = ""; render(w, w < 560); }; new ResizeObserver(() => go()).observe(box); go(); redraws.push(() => go(true)); }
+const lbl = (svg, x, y, s, cls = "lab", anchor = "start") => { const t = el("text", { x, y, class: cls, "text-anchor": anchor }, svg); t.textContent = s; return t; };
+const isDark = () => { const r = document.documentElement; return r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; };
+document.getElementById("theme").onclick = () => { const r = document.documentElement; r.dataset.theme = isDark() ? "light" : "dark"; redraws.forEach(f => f()); };
+
+/* hero mark: a small mosaic panel with a red diamond */
+(() => { const g = document.getElementById("heroMark"); const s = 18, cols = ["--hot", "--ochre", "--fg", "--terra", "--teal"];
+  for (let i = -4; i <= 4; i++) for (let j = -4; j <= 4; j++) { const d = Math.abs(i) + Math.abs(j);
+    const c = d <= 1 ? "--hot" : d === 2 ? "--ochre" : d === 3 ? "--terra" : (i + j) % 2 ? "--fg" : "--teal";
+    if (d > 6) continue; el("rect", { x: i * s * 1.12 - s / 2, y: j * s * 1.12 - s / 2, width: s, height: s, rx: 1.5, fill: `var(${c})`, opacity: d > 4 ? .35 : 1 }, g); }
+})();
+
+/* ===== map ===== */
+const BR = R.income_breaks, QV = ["--q1", "--q2", "--q3", "--q4", "--q5"];
+const qOf = v => v < BR[0] ? 0 : v < BR[1] ? 1 : v < BR[2] ? 2 : v < BR[3] ? 3 : 4;
+const MS = D.msoa.map(a => ({ lat: a[0], lng: a[1], inc: a[2], v2: a[3], name: a[4] }));
+const sortedInc = MS.map(m => m.inc).sort((a, b) => a - b);
+const pctBelow = v => { let lo = 0, hi = sortedInc.length; while (lo < hi) { const m = (lo + hi) >> 1; if (sortedInc[m] < v) lo = m + 1; else hi = m; } return lo / sortedInc.length; };
+const VL = D.villas.map(a => ({ lat: a[0], lng: a[1], name: a[2], lad: a[3], wp: a[4], wd: a[5], osm: a[6], pl: a[7], ref: a[8], qid: a[9], pid: a[10] }));
+let lmap, layers = {}, villaMarkers = [];
+function nearestMsoa(lat, lng) { let b = null, bd = 1e9; const k = Math.cos(lat * Math.PI / 180); for (const m of MS) { const d = (m.lat - lat) ** 2 + ((m.lng - lng) * k) ** 2; if (d < bd) { bd = d; b = m; } } return b; }
+function villaPop(v) {
+  const src = [v.wp && "Wikipedia", v.wd && "Wikidata", v.osm && "OpenStreetMap", v.pl && "Pleiades"].filter(Boolean);
+  const m = nearestMsoa(v.lat, v.lng);
+  let h = `<div class="pop"><b class="t">${esc(v.name)}</b><div class="c">Roman villa · ${esc(v.lad)}</div><dl><dt>Sources</dt><dd>${src.join(", ")}</dd>${v.ref ? `<dt>Record</dt><dd>${esc(v.ref)}</dd>` : ""}</dl>`;
+  h += `<div class="sec">Nearest neighbourhood today</div><dl><dt>MSOA</dt><dd>${esc(m.name)}</dd><dt>Income</dt><dd>${gbp(m.inc)} a year</dd><dt>Richer than</dt><dd>${pc(pctBelow(m.inc))} of MSOAs</dd></dl>`;
+  const links = []; if (v.qid) links.push(`<a href="https://www.wikidata.org/wiki/${v.qid}" target="_blank" rel="noopener">Wikidata</a>`); if (v.pid) links.push(`<a href="https://pleiades.stoa.org/places/${v.pid}" target="_blank" rel="noopener">Pleiades</a>`);
+  if (links.length) h += `<div style="margin-top:6px">${links.join(" · ")}</div>`;
+  return h + "</div>";
+}
+function buildMap() {
+  lmap = L.map("lmap", { preferCanvas: true, scrollWheelZoom: false, minZoom: 5, maxZoom: 13, zoomSnap: 0.5 }).fitBounds([[50.0, -5.6], [55.6, 1.7]]);
+  lmap.on("click", () => lmap.scrollWheelZoom.enable());
+  L.tileLayer("https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}", { attribution: "Tiles © Esri", maxZoom: 16 }).addTo(lmap);
+  lmap.createPane("roads").style.zIndex = 410; lmap.createPane("towns").style.zIndex = 420; lmap.createPane("villas").style.zIndex = 430;
+  const rIn = new L.Canvas({ padding: .3 }), rTop = new L.Canvas({ padding: .3, pane: "villas" }), rTown = new L.Canvas({ padding: .3, pane: "towns" }), rRoad = new L.Canvas({ padding: .3, pane: "roads" });
+  layers.income = L.layerGroup(MS.map(m => L.circleMarker([m.lat, m.lng], { renderer: rIn, radius: 3, stroke: false, fillOpacity: .9 })
+    .bindPopup(() => `<div class="pop"><b class="t">${esc(m.name)}</b><div class="c">Neighbourhood (MSOA)</div><dl><dt>Income</dt><dd>${gbp(m.inc)} a year</dd><dt>Richer than</dt><dd>${pc(pctBelow(m.inc))} of MSOAs</dd><dt>Villas within 2 km</dt><dd>${m.v2}</dd></dl><div class="note">Mean total annual household income, FYE2023 (ONS modelled estimate).</div></div>`)));
+  layers.roads = L.layerGroup(D.roads.map(c => L.polyline(c, { renderer: rRoad, weight: 1.6, opacity: .85, interactive: false })));
+  layers.towns = L.layerGroup(D.towns.map(t => L.circleMarker([t[0], t[1]], { renderer: rTown, radius: 5, weight: 2, fillOpacity: .15 }).bindPopup(`<div class="pop"><b class="t">${esc(t[2])}</b><div class="c">Roman town or settlement (Pleiades)</div></div>`)));
+  villaMarkers = VL.map(v => { const mk = L.circleMarker([v.lat, v.lng], { renderer: rTop, radius: 4.5, weight: 1.4, fillOpacity: 1 }).bindPopup(() => villaPop(v)); v.mk = mk; return mk; });
+  layers.villas = L.layerGroup(villaMarkers);
+  ["income", "villas"].forEach(k => layers[k].addTo(lmap));
+  lmap.on("zoomend", restyle); restyle();
+  document.querySelectorAll("[data-layer]").forEach(b => b.onclick = () => { const k = b.dataset.layer, on = b.getAttribute("aria-pressed") !== "true"; b.setAttribute("aria-pressed", on); on ? layers[k].addTo(lmap) : lmap.removeLayer(layers[k]); });
+  redraws.push(restyle);
+}
+function restyle() {
+  const z = lmap.getZoom(), q = QV.map(css), hot = css("--hot"), bg = css("--bg"), och = css("--ochre");
+  document.getElementById("lmap").classList.toggle("dark-tiles", isDark());
+  const r = Math.max(2, Math.min(9, 2.4 * Math.pow(1.5, z - 6)));
+  layers.income.eachLayer(l => { }); let i = 0;
+  layers.income.getLayers().forEach((l, j) => l.setStyle({ radius: r, fillColor: q[qOf(MS[j].inc)] }));
+  const vr = Math.max(3.5, Math.min(9, 3.6 * Math.pow(1.3, z - 6)));
+  villaMarkers.forEach(m => m.setStyle({ radius: vr, color: bg, fillColor: hot }));
+  layers.towns.getLayers().forEach(l => l.setStyle({ color: och, fillColor: och, radius: vr + 1.5 }));
+  layers.roads.getLayers().forEach(l => l.setStyle({ color: och }));
+  legend();
+}
+function legend() {
+  const lg = document.getElementById("legend"), b = BR.map(x => "£" + Math.round(x / 1000) + "k");
+  const labs = ["Under " + b[0], b[0] + " to " + b[1], b[1] + " to " + b[2], b[2] + " to " + b[3], "Over " + b[3]];
+  lg.innerHTML = `<span>Household income:</span>` + labs.map((s, i) => `<span><i style="background:var(${QV[i]})"></i>${s}</span>`).join("") +
+    `<span><i style="background:var(--hot);border:1px solid var(--bg)"></i>Roman villa</span><span><i style="border:2px solid var(--ochre)"></i>Roman town</span>`;
+}
+/* search */
+(() => { const q = document.getElementById("q"), sug = document.getElementById("sug"); let items = [], sel = -1;
+  const close = () => { sug.style.display = "none"; q.setAttribute("aria-expanded", "false"); sel = -1; };
+  const go = v => { close(); q.value = v.name; lmap.setView([v.lat, v.lng], 11); setTimeout(() => v.mk.openPopup(), 250); };
+  q.addEventListener("input", () => { const s = q.value.trim().toLowerCase(); if (s.length < 2) return close();
+    items = VL.filter(v => v.name.toLowerCase().includes(s) || v.lad.toLowerCase().includes(s)).slice(0, 12);
+    sug.innerHTML = items.map((v, i) => `<li role="option" data-i="${i}">${esc(v.name)} <span>${esc(v.lad)}</span></li>`).join("");
+    sug.style.display = items.length ? "block" : "none"; q.setAttribute("aria-expanded", items.length > 0); });
+  sug.addEventListener("click", e => { const li = e.target.closest("li"); if (li) go(items[+li.dataset.i]); });
+  q.addEventListener("keydown", e => { const lis = [...sug.children]; if (e.key === "ArrowDown") { sel = Math.min(lis.length - 1, sel + 1); } else if (e.key === "ArrowUp") { sel = Math.max(0, sel - 1); } else if (e.key === "Enter") { if (items[Math.max(0, sel)]) go(items[Math.max(0, sel)]); e.preventDefault(); return; } else if (e.key === "Escape") return close(); else return; lis.forEach((l, i) => l.setAttribute("aria-selected", i === sel)); e.preventDefault(); });
+  document.addEventListener("click", e => { if (!e.target.closest(".searchbox")) close(); });
+})();
+buildMap();
+
+/* ===== charts ===== */
+/* deciles */
+resp(document.getElementById("cDec"), (W, m) => {
+  const H = 260, ml = 44, mr = 10, mt = 14, mb = 44, svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Bar chart of share of MSOAs with a villa within 2 km by income tenth" }, document.getElementById("cDec"));
+  const d = R.deciles, mx = 0.12, iw = W - ml - mr, ih = H - mt - mb, bw = iw / 10;
+  [0, .04, .08, .12].forEach(t => { const y = mt + ih * (1 - t / mx); el("line", { x1: ml, x2: W - mr, y1: y, y2: y, stroke: "var(--rule)" }, svg); lbl(svg, ml - 6, y + 4, pc(t), "lab m s", "end"); });
+  const avg = R.msoa.share_villa_2km, ya = mt + ih * (1 - avg / mx);
+  d.forEach((r, i) => { const h = ih * r.share / mx, x = ml + i * bw + 3; const b = el("rect", { x, y: mt + ih - h, width: bw - 6, height: h, fill: "var(--hot)", opacity: .8 }, svg);
+    hover(b, `<b>Tenth ${r.decile}</b><br>${gbp(r.income_lo)} to ${gbp(r.income_hi)}<br>${pc(r.share, 1)} have a villa within 2 km`);
+    lbl(svg, x + (bw - 6) / 2, H - mb + 16, String(r.decile), "lab s", "middle"); });
+  el("line", { x1: ml, x2: W - mr, y1: ya, y2: ya, stroke: "var(--fg)", "stroke-dasharray": "4 4" }, svg);
+  lbl(svg, ml + 6, ya - 6, "all MSOAs " + pc(avg, 1), "lab s");
+  lbl(svg, ml, H - 6, "Poorest tenth", "lab m s"); lbl(svg, W - mr, H - 6, "Richest tenth", "lab m s", "end");
+});
+/* distance bands */
+resp(document.getElementById("cBands"), (W, m) => {
+  const box = document.getElementById("cBands"), B = R.bands, two = !m, pw = two ? (W - 24) / 2 : W, ph = 250;
+  const H = two ? ph : ph * 2 + 24, svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Villa density and median income by distance band from London" }, box);
+  const panel = (ox, oy, key, mx, ticks, f, col, title) => { const ml = 46, mb = 52, mt = 22, iw = pw - ml - 6, ih = ph - mt - mb, bw = iw / B.length;
+    lbl(svg, ox, oy + 12, title, "lab b");
+    ticks.forEach(t => { const y = oy + mt + ih * (1 - t / mx); el("line", { x1: ox + ml, x2: ox + pw - 6, y1: y, y2: y, stroke: "var(--rule)" }, svg); lbl(svg, ox + ml - 6, y + 4, f(t), "lab m s", "end"); });
+    B.forEach((r, i) => { const h = ih * r[key] / mx, x = ox + ml + i * bw + 2; const b = el("rect", { x, y: oy + mt + ih - h, width: bw - 4, height: h, fill: col }, svg);
+      hover(b, `<b>${r.band} from London</b><br>${r.villas} villas · ${fmt(r.area_km2)} km² of land<br>${r.villas_per_1000km2.toFixed(1)} villas per 1,000 km²<br>Median income ${gbp(r.median_income)} (${r.msoas} MSOAs)`);
+      lbl(svg, x + (bw - 4) / 2, oy + ph - mb + 14, r.lo + "+", "lab s", "middle"); });
+    lbl(svg, ox + ml + iw / 2, oy + ph - 14, "ring, km from Charing Cross", "lab m s", "middle"); };
+  panel(0, 0, "villas_per_1000km2", 12, [0, 4, 8, 12], t => t, "var(--hot)", "Villas per 1,000 km²");
+  panel(two ? pw + 24 : 0, two ? 0 : ph + 24, "median_income", 80000, [0, 20000, 40000, 60000, 80000], t => "£" + t / 1000 + "k", "var(--teal)", "Median household income");
+});
+/* ladder */
+resp(document.getElementById("cLadder"), (W, m) => {
+  const Ms = R.models, rowh = m ? 54 : 40, ml = m ? 8 : 300, mt = 20, H = mt + Ms.length * rowh + 34, svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Villa premium with confidence intervals as controls are added" }, document.getElementById("cLadder"));
+  const lo = -0.04, hi = 0.14, x = v => ml + (W - ml - 16) * (v - lo) / (hi - lo);
+  [-0.04, 0, 0.04, 0.08, 0.12].forEach(t => { el("line", { x1: x(t), x2: x(t), y1: mt - 6, y2: H - 28, stroke: t === 0 ? "var(--fg)" : "var(--rule)", "stroke-width": t === 0 ? 1.4 : 1 }, svg); lbl(svg, x(t), H - 10, spc(t, 0), "lab m s", "middle"); });
+  Ms.forEach((r, i) => { const y = mt + i * rowh + (m ? 32 : rowh / 2);
+    if (m) lbl(svg, ml, y - 14, r.label, "lab s halo"); else lbl(svg, ml - 12, y + 4, r.label, "lab", "end");
+    el("line", { x1: x(r.lo), x2: x(r.hi), y1: y, y2: y, stroke: "var(--hot)", "stroke-width": 3, opacity: .45 }, svg);
+    const c = el("circle", { cx: x(r.premium), cy: y, r: 7, fill: i === 0 ? "var(--hot)" : "var(--card)", stroke: "var(--hot)", "stroke-width": 2.5 }, svg);
+    hover(c, `<b>${esc(r.label)}</b><br>Premium ${spc(r.premium)} (95%: ${spc(r.lo)} to ${spc(r.hi)})<br>R² ${r.r2.toFixed(2)} · ${fmt(r.n)} MSOAs`);
+    lbl(svg, x(r.hi) + 8, y + 4, spc(r.premium), "lab b s"); });
+});
+/* sensitivity table */
+(() => { const tb = document.querySelector("#tSens tbody"); tb.innerHTML = R.sensitivity.map(s => `<tr><td>${esc(s.label)}</td><td class="num">${spc(s.raw)}</td><td class="num">${spc(s.full)}</td><td class="num wide">${spc(s.full_lo)} to ${spc(s.full_hi)}</td></tr>`).join(""); })();
+/* placebo */
+resp(document.getElementById("cPlacebo"), (W, m) => {
+  const box = document.getElementById("cPlacebo"), two = !m, pw = two ? (W - 24) / 2 : W, ph = 220, H = two ? ph : ph * 2 + 20;
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Histograms of placebo premiums with the real premium marked" }, box);
+  const hist = (ox, oy, vals, real, lo, hi, title) => { const ml = 8, mt = 40, mb = 34, iw = pw - ml - 8, ih = ph - mt - mb, nb = 24, bw = (hi - lo) / nb, cnt = Array(nb).fill(0);
+    vals.forEach(v => { const k = Math.min(nb - 1, Math.max(0, Math.floor((v - lo) / bw))); cnt[k]++; }); const mx = Math.max(...cnt), X = v => ox + ml + iw * (v - lo) / (hi - lo);
+    lbl(svg, ox, oy + 12, title, "lab b");
+    cnt.forEach((c, k) => el("rect", { x: X(lo + k * bw) + 1, y: oy + mt + ih * (1 - c / mx), width: iw / nb - 2, height: ih * c / mx, fill: "var(--muted)", opacity: .55 }, svg));
+    el("line", { x1: X(real), x2: X(real), y1: oy + mt - 4, y2: oy + mt + ih, stroke: "var(--hot)", "stroke-width": 3 }, svg);
+    lbl(svg, X(real), oy + mt - 8, "real " + spc(real), "lab b s", "middle");
+    const step = (hi - lo) / 4; for (let t = 0; t <= 4; t++) lbl(svg, X(lo + t * step), oy + ph - 14, spc(lo + t * step, 0), "lab m s", "middle"); };
+  hist(0, 0, R.placebo.raw_values, R.model.raw.premium, 0.04, 0.20, "No controls");
+  hist(two ? pw + 24 : 0, two ? 0 : ph + 20, R.placebo.full_values, R.model.urban.premium, -0.04, 0.08, "All controls");
+});
+/* regions */
+(() => { const tb = document.querySelector("#tReg tbody"); tb.innerHTML = R.regions.map(r => `<tr><td>${esc(r.region)}</td><td class="num">${r.villas}</td><td class="num">${r.villa_msoas}</td><td class="num">${r.median_with != null ? gbp(r.median_with) : "n/a"}</td><td class="num">${gbp(r.median_without)}</td><td class="num${r.gap_pct < 0 ? " neg" : ""}">${r.gap_pct != null ? spc(r.gap_pct, 0) : "few"}</td></tr>`).join(""); })();
+/* local authorities */
+resp(document.getElementById("cLad"), (W, m) => {
+  const H = m ? 320 : 380, ml = 54, mr = 12, mt = 12, mb = 40, svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Scatter of local authority villa density against income" }, document.getElementById("cLad"));
+  const X = v => ml + (W - ml - mr) * Math.sqrt(v) / Math.sqrt(7.5), Y = v => mt + (H - mt - mb) * (1 - (v - 35000) / (105000 - 35000));
+  [40000, 60000, 80000, 100000].forEach(t => { el("line", { x1: ml, x2: W - mr, y1: Y(t), y2: Y(t), stroke: "var(--rule)" }, svg); lbl(svg, ml - 6, Y(t) + 4, "£" + t / 1000 + "k", "lab m s", "end"); });
+  [0, 0.5, 1, 2, 4, 7].forEach(t => { el("line", { x1: X(t), x2: X(t), y1: mt, y2: H - mb, stroke: "var(--rule)" }, svg); lbl(svg, X(t), H - mb + 16, String(t), "lab m s", "middle"); });
+  lbl(svg, ml + (W - ml - mr) / 2, H - 6, "Villas per 100 km²", "lab m s", "middle");
+  D.lad.forEach(r => { const c = el("circle", { cx: X(r[3]) + (r[2] ? 0 : (Math.random() - .5) * 6), cy: Y(r[4]), r: r[2] >= 3 ? 4.5 : 3.2, fill: r[2] ? "var(--hot)" : "var(--teal)", opacity: r[2] ? .8 : .45 }, svg);
+    hover(c, `<b>${esc(r[0])}</b><br>${esc(r[1])}<br>${r[2]} villas · ${r[3].toFixed(2)} per 100 km²<br>Income ${gbp(r[4])} (rank ${r[5]})`); });
+  const lg = el("g", {}, svg); el("circle", { cx: W - 170, cy: mt + 10, r: 4.5, fill: "var(--hot)" }, lg); lbl(lg, W - 160, mt + 14, "has villas", "lab s");
+  el("circle", { cx: W - 80, cy: mt + 10, r: 3.2, fill: "var(--teal)", opacity: .6 }, lg); lbl(lg, W - 70, mt + 14, "none", "lab s");
+});
+(() => { const tb = document.querySelector("#tLad tbody"); tb.innerHTML = R.lad.top_density.map(r => `<tr><td>${esc(r.name)}<small>${esc(r.region)}</small></td><td class="num">${r.villas}</td><td class="num">${r.density.toFixed(2)}</td><td class="num">${gbp(r.income)}</td><td class="num">${r.income_rank}</td></tr>`).join(""); })();
+/* famous */
+(() => { document.getElementById("famous").innerHTML = R.famous.map(f => `<div class="card"><b>${esc(f.name)}</b>${esc(f.lad)} · nearest MSOA ${esc(f.msoa)}<div class="big">${gbp(f.income)} <span>a year</span></div>Richer than ${Math.floor(f.pct * 100)}% of MSOAs<div class="bar"><i style="width:${(f.pct * 100).toFixed(1)}%"></i></div></div>`).join(""); })();
+</script>
+</body>
+</html>
