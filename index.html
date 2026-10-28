@@ -459,6 +459,6 @@ resp(document.getElementById("cLad"), (W, m) => {
 /* famous */
 (() => { document.getElementById("famous").innerHTML = R.famous.map(f => `<div class="card"><b>${esc(f.name)}</b>${esc(f.lad)} · nearest MSOA ${esc(f.msoa)}<div class="big">${gbp(f.income)} <span>a year</span></div>Richer than ${Math.floor(f.pct * 100)}% of MSOAs<div class="bar"><i style="width:${(f.pct * 100).toFixed(1)}%"></i></div></div>`).join(""); })();
 </script>
-<script src="https://tristan-hotham.github.io/assets/site-nav.js" defer></script>
+<script src="/assets/site-nav.js" defer></script>
 </body>
 </html>
