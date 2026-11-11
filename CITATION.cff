@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite it as below."
+title: "The Roman Commuter Belt? Roman Villas and Household Income in England and Wales"
+type: dataset
+authors:
+  - family-names: Hotham
+    given-names: Tristan
+    orcid: "https://orcid.org/0000-0003-4931-9349"
+    affiliation: "Independent researcher"
+doi: "10.5281/zenodo.23689960"
+url: "https://maps.tristanhotham.com/roman-villas/"
+repository-code: "https://github.com/Tristan-Hotham/roman-villas"
+license: CC-BY-SA-4.0
+keywords:
+  - "Roman Britain"
+  - "Roman villas"
+  - "historical persistence"
+  - "household income"
+  - "MSOA"
+  - "England and Wales"
+  - "historical GIS"
+  - "open data"
+  - "placebo test"
+  - "economic geography"
